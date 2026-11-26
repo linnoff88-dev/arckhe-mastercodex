@@ -1,7 +1,7 @@
 ---
 name: qa-visual
-description: Roda QA visual automatizado de uma aplicação web. Abre browser headless (Playwright), navega pelos fluxos chave, captura screenshots, compara com baseline e reporta regressões visuais. Use quando o usuário pedir "QA visual", "testa o app", "checa regressão visual", "valida fluxo X".
-when_to_use: Usuário acabou de subir build em staging; quer validar fluxo crítico antes do deploy; quer comparar versão atual com baseline; quer screenshots para documentação visual; suspeita que mudança CSS quebrou algo.
+description: Roda QA visual automatizado de uma aplicaçêo web. Abre browser headless (Playwright), navega pelos fluxos chave, captura screenshots, compara com baseline e reporta regressões visuais. Use quando o usuário pedir "QA visual", "testa o app", "checa regressêo visual", "valida fluxo X".
+when_to_use: Usuário acabou de subir build em staging; quer validar fluxo crítico antes do deploy; quer comparar versêo atual com baseline; quer screenshots para documentaçêo visual; suspeita que mudança CSS quebrou algo.
 ---
 
 # Skill: QA Visual
@@ -10,11 +10,11 @@ when_to_use: Usuário acabou de subir build em staging; quer validar fluxo crít
 
 - "Testa visualmente o app em <url>"
 - "Faz QA do fluxo de login"
-- "Checa regressão visual antes do deploy"
+- "Checa regressêo visual antes do deploy"
 - "Captura screenshots dos 5 fluxos principais"
 - "Compara essa branch com a baseline"
 
-**NÃO usar quando:** o usuário quer testes funcionais profundos (lógica de negócio) — isso é Vitest/Jest e fica fora do escopo.
+**NêO usar quando:** o usuário quer testes funcionais profundos (lógica de negócio) — isso é Vitest/Jest e fica fora do escopo.
 
 ## Como funciona — passo a passo
 
@@ -26,8 +26,8 @@ Pergunta:
 - Tem baseline (snapshots antigos)? Onde?
 - Viewport: desktop (1440x900), mobile (390x844), ou ambos?
 
-### Passo 2: Plano de execução
-Lista os fluxos que vai rodar e pede confirmação. Exemplo:
+### Passo 2: Plano de execuçêo
+Lista os fluxos que vai rodar e pede confirmaçêo. Exemplo:
 ```
 Vou rodar 5 fluxos:
 1. Login (sucesso + erro)
@@ -50,7 +50,7 @@ Gera HTML report em `qa-report/index.html` mostrando:
 - Tempo de cada fluxo
 
 ### Passo 5: Resumir no chat
-Resume em 5 linhas: quantos fluxos passaram, quantos quebraram, regressões críticas, sugestão de ação.
+Resume em 5 linhas: quantos fluxos passaram, quantos quebraram, regressões críticas, sugestêo de açêo.
 
 ## Inputs esperados
 
@@ -68,11 +68,11 @@ Resume em 5 linhas: quantos fluxos passaram, quantos quebraram, regressões crí
 - Pasta `qa-report-<timestamp>/` com:
   - `index.html` — relatório navegável
   - `screenshots/` — PNGs atuais
-  - `diffs/` — PNGs de diferença (apenas onde houve regressão)
+  - `diffs/` — PNGs de diferença (apenas onde houve regressêo)
   - `console.log` — logs de browser
   - `network.har` — captura HAR para debug
 - Resumo no chat
-- Exit code 0 (tudo OK) / 1 (regressão detectada) — útil pra CI
+- Exit code 0 (tudo OK) / 1 (regressêo detectada) — útil pra CI
 
 ## Templates / scripts
 
@@ -199,13 +199,13 @@ async function compareWithBaseline(currentPath: string, baselinePath: string) {
 
 ## Exemplos
 
-### Exemplo 1: Validação pré-deploy
+### Exemplo 1: Validaçêo pré-deploy
 **Input:** "Roda QA visual em https://staging.inboxai.com.br nos 5 fluxos do qa-flows.json"
-**Output:** Relatório indica que 4/5 passaram, fluxo "create-deal" tem 3.2% de pixels diferentes na seção do botão CTA — provavelmente mudança de cor sem querer.
+**Output:** Relatório indica que 4/5 passaram, fluxo "create-deal" tem 3.2% de pixels diferentes na seçêo do botêo CTA — provavelmente mudança de cor sem querer.
 
 ### Exemplo 2: Sem baseline
 **Input:** "Captura screenshots de 3 fluxos da minha home pra ter baseline"
-**Output:** Roda fluxos, salva em `qa-baseline/`, sem comparação. Confirma que próxima rodada já compara.
+**Output:** Roda fluxos, salva em `qa-baseline/`, sem comparaçêo. Confirma que próxima rodada já compara.
 
 ## Aprendizados
 

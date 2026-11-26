@@ -1,7 +1,7 @@
 # MASTER CODEX — Plano Mestre
 
-> **Versão:** 1.0 — 2026-05-01
-> **Formato:** Curso HTML (texto + imagens), padrão INEMA.CLUB
+> **Versêo:** 1.0 — 2026-05-01
+> **Formato:** Curso HTML (texto + imagens), padrêo INEMA.CLUB
 > **Preço-alvo:** R$ 5.000
 > **Estrutura:** 6 trilhas × 4 módulos = 24 módulos / 144 tópicos
 
@@ -25,7 +25,7 @@ Mix com módulo de nivelamento na Trilha 1:
 
 1. **Método autoral** — "Master Codex Full-Stack Agentic Build" com 5 pilares: Planejar → Projetar → Construir → Validar → Lançar
 2. **Casos reais brasileiros** distribuídos pelas trilhas
-3. **Skills e AGENTS.md prontos** entregues como exemplos práticos nos módulos (não teoria, código pronto pra usar)
+3. **Skills e AGENTS.md prontos** entregues como exemplos práticos nos módulos (nêo teoria, código pronto pra usar)
 
 ---
 
@@ -36,25 +36,25 @@ Mix com módulo de nivelamento na Trilha 1:
 ### O que faz
 
 - Centraliza WhatsApp + Instagram DM + Email + Web Chat numa caixa única
-- Pipeline de CRM (lead → qualificação → proposta → fechado/perdido)
+- Pipeline de CRM (lead → qualificaçêo → proposta → fechado/perdido)
 - Agente IA qualifica lead 24/7 e passa para humano quando necessário
 - Agente IA de follow-up (reativa lead frio)
 - Agente IA de pós-venda (NPS, upsell)
-- Dashboard com analytics (tempo de resposta, conversão, valor do pipeline)
+- Dashboard com analytics (tempo de resposta, conversêo, valor do pipeline)
 
 ### Stack pedagógica
 
 | Camada | Tecnologia | Justificativa |
 |---|---|---|
-| Frontend | Next.js + Tailwind | Padrão de mercado, fácil de gerar com Codex |
-| Backend / DB | Convex (ou Supabase) | Free tier generoso, sem fricção |
-| WhatsApp | Evolution API (auto-hospedada) | Aluno roda em 10 min sem aprovação Meta |
+| Frontend | Next.js + Tailwind | Padrêo de mercado, fácil de gerar com Codex |
+| Backend / DB | Convex (ou Supabase) | Free tier generoso, sem fricçêo |
+| WhatsApp | Evolution API (auto-hospedada) | Aluno roda em 10 min sem aprovaçêo Meta |
 | IA | OpenAI / Anthropic via Codex | Já parte do fluxo agentic |
 | Deploy | Vercel + Convex Cloud | Zero-config |
 
 ### Trade-off declarado
 
-Evolution API auto-hospedada não é "production-grade enterprise". Para um curso vendido como "construa e venda micro-SaaS", esse trade-off é **certo**: prioriza tempo-até-cliente sobre arquitetura definitiva.
+Evolution API auto-hospedada nêo é "production-grade enterprise". Para um curso vendido como "construa e venda micro-SaaS", esse trade-off é **certo**: prioriza tempo-até-cliente sobre arquitetura definitiva.
 
 ---
 
@@ -78,9 +78,9 @@ Evolution API auto-hospedada não é "production-grade enterprise". Para um curs
 | # | Módulo | Foco |
 |---|---|---|
 | 2.1 | AGENTS.md: o manual operacional do projeto | Template autoral pronto |
-| 2.2 | Skills: o que são, instalar, invocar | 3 skills nossas como exemplo |
+| 2.2 | Skills: o que sêo, instalar, invocar | 3 skills nossas como exemplo |
 | 2.3 | Reverse prompting + Definition of Done + Plan Mode | Disciplina de prompt |
-| 2.4 | Memória, contexto, sandbox, worktrees | Não deixar o agente bagunçar |
+| 2.4 | Memória, contexto, sandbox, worktrees | Nêo deixar o agente bagunçar |
 
 ### TRILHA 3 — Design e Frontend com IA *(Purple · início do InboxAI)*
 
@@ -91,7 +91,7 @@ Evolution API auto-hospedada não é "production-grade enterprise". Para um curs
 | 3.1 | Image Gen 2: 5 direções de UI antes de codar | Refs: Intercom, Crisp, Drift |
 | 3.2 | Construindo o inbox unificado | Lista + thread + painel lateral |
 | 3.3 | CRM kanban + dashboard de métricas | Drag-and-drop, charts |
-| 3.4 | Browser embutido + iteração visual | Anotações e fixes em tempo real |
+| 3.4 | Browser embutido + iteraçêo visual | Anotações e fixes em tempo real |
 
 ### TRILHA 4 — Backend Real, WhatsApp e Agente IA *(Amber)*
 
@@ -134,7 +134,7 @@ Evolution API auto-hospedada não é "production-grade enterprise". Para um curs
 |---|---|---|
 | AGENTS.md mestre comentado | T2 | Template |
 | 5 skills prontas: `landing-page`, `pr-review`, `qa-visual`, `micro-saas-launch`, `weekly-report` | T2, T5, T6 | Código |
-| Definition of Done + checklist de revisão | T2 | Template |
+| Definition of Done + checklist de revisêo | T2 | Template |
 | Pacote Remotion editável | T5 | Asset |
 | Boilerplate InboxAI white-label revendável | T4 | Código |
 | 4 customizações verticais (clínicas, imobiliárias, e-commerce, advocacia) | T6 | Código |
@@ -170,4 +170,4 @@ Ao final de cada trilha, o aluno sabe:
 
 ## 7. Próximos passos
 
-Ver `todo.md` para tracker de implementação das 30 páginas HTML.
+Ver `todo.md` para tracker de implementaçêo das 30 páginas HTML.

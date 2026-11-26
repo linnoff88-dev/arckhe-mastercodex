@@ -1,6 +1,6 @@
 ---
 name: landing-page
-description: Gera uma landing page high-converting com 5 seções padrão (hero, dor, solução, prova social, CTA) usando Next.js 15 + Tailwind + shadcn/ui. Use quando o usuário pedir "landing", "página de vendas", "página de captura" ou "lançamento".
+description: Gera uma landing page high-converting com 5 seções padrêo (hero, dor, soluçêo, prova social, CTA) usando Next.js 15 + Tailwind + shadcn/ui. Use quando o usuário pedir "landing", "página de vendas", "página de captura" ou "lançamento".
 when_to_use: Usuário pede uma landing nova; precisa de página de captura para campanha; quer transformar copy em página renderizada; quer adaptar uma landing existente para uma nova oferta.
 ---
 
@@ -14,11 +14,11 @@ when_to_use: Usuário pede uma landing nova; precisa de página de captura para 
 - "Quero testar uma oferta com landing"
 - "Adapta essa copy em landing"
 
-**NÃO usar quando:** o usuário pede um site institucional inteiro (várias páginas, blog, etc.) — isso é outra skill.
+**NêO usar quando:** o usuário pede um site institucional inteiro (várias páginas, blog, etc.) — isso é outra skill.
 
 ## Como funciona — passo a passo
 
-### Passo 1: Coletar contexto (se não veio no prompt)
+### Passo 1: Coletar contexto (se nêo veio no prompt)
 Pergunte ao usuário, em uma única mensagem:
 - Produto/serviço (1 frase)
 - Público-alvo (1 frase)
@@ -34,7 +34,7 @@ Sempre nessa ordem:
 
 1. **Hero** — headline + subheadline + CTA primário + imagem/vídeo
 2. **Dor** — empatia: "se você está cansado de X, Y, Z..."
-3. **Solução** — apresenta o produto + 3 benefícios + screenshot/mockup
+3. **Soluçêo** — apresenta o produto + 3 benefícios + screenshot/mockup
 4. **Prova social** — depoimentos, logos de clientes, números
 5. **CTA final** — repete a oferta + reforça escassez/urgência se aplicável
 
@@ -79,19 +79,19 @@ npm run dev
 | Produto | Sim | — |
 | Público | Sim | — |
 | Promessa | Sim | — |
-| Dores (3) | Não | Pede |
-| Benefícios (3) | Não | Pede |
-| Prova social | Não | Placeholder com TODO |
-| CTA | Não | "Comece agora" |
-| Tom | Não | Direto e prático |
-| Cor primária | Não | `slate` |
+| Dores (3) | Nêo | Pede |
+| Benefícios (3) | Nêo | Pede |
+| Prova social | Nêo | Placeholder com TODO |
+| CTA | Nêo | "Comece agora" |
+| Tom | Nêo | Direto e prático |
+| Cor primária | Nêo | `slate` |
 
 ## Outputs
 
 - Pasta completa com Next.js 15 rodável
 - `npm run dev` funciona out-of-the-box
 - 5 componentes React separados, cada um < 80 linhas
-- Tailwind configurado, shadcn/ui copiado (não dependência)
+- Tailwind configurado, shadcn/ui copiado (nêo dependência)
 - Acessibilidade: heading hierarchy correta, alt em imagens, contraste OK
 - Responsivo mobile-first
 - Sem JS desnecessário (só Server Components, exceto onde precisa interatividade)
@@ -182,7 +182,7 @@ npx shadcn@latest add button card
 - Tom mais formal (B2B saúde)
 - Hero com mockup de WhatsApp
 - Pain section: "atendente cara/fim de semana sem cobertura/agenda mal preenchida"
-- CTA: "Agendar diagnóstico gratuito" (lead gen, não venda direta)
+- CTA: "Agendar diagnóstico gratuito" (lead gen, nêo venda direta)
 
 ## Aprendizados (atualize com o uso)
 

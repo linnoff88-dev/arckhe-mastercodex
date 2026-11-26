@@ -6,7 +6,7 @@ Customizações prontas pra 4 nichos de cliente. Use cada arquivo como **briefin
 
 Boilerplate genérico converte mal. Quando você fala "tenho um CRM com IA pra qualquer empresa", o cliente desconfia. Quando você fala "tenho um CRM com IA **pra clínica odontológica que integra com a sua agenda Google**", o cliente compra na hora.
 
-Cada arquivo aqui é uma combinação de:
+Cada arquivo aqui é uma combinaçêo de:
 1. **Persona** — quem é o decisor, o que ele teme, o que ele quer.
 2. **Adaptações de UI** — campos extras, terminologia.
 3. **Pipeline customizado** — estados próprios do nicho.
@@ -27,32 +27,32 @@ Cada arquivo aqui é uma combinação de:
 ## Como usar na prática
 
 ### Antes de prospectar
-1. Escolha 1 vertical pra começar (não 4 ao mesmo tempo).
+1. Escolha 1 vertical pra começar (nêo 4 ao mesmo tempo).
 2. Lê o arquivo correspondente inteiro.
 3. Decora a persona, dores e 3 objeções.
 4. Prepare 5 cases hipotéticos (ou reais, se já tiver) específicos do nicho.
 
-### Na primeira reunião
-1. Não venda. Diagnostica.
+### Na primeira reuniêo
+1. Nêo venda. Diagnostica.
 2. Pergunte: "como vocês atendem hoje?", "qual % das mensagens vocês perdem?", "quanto custa um lead pra vocês?".
-3. Mapeia a dor com a linguagem do nicho (não com a sua).
-4. Só agenda 2ª reunião.
+3. Mapeia a dor com a linguagem do nicho (nêo com a sua).
+4. Só agenda 2ª reuniêo.
 
-### Na segunda reunião
+### Na segunda reuniêo
 1. Mostra o boilerplate **já customizado** com nome/cor/logo do cliente. Faz na frente dele em 10 min se precisar.
 2. Demonstra o fluxo principal específico do nicho (ex: agendamento pra clínica).
 3. Pricing no fim, sem pedir desculpa: "investimento de R$ X/mês com setup de R$ Y".
 
-### Na implementação
+### Na implementaçêo
 1. Faz o setup base (1 dia, conforme `inboxai-boilerplate/SETUP.md`).
-2. Aplica a customização do vertical (1-2 dias, conforme arquivo do nicho).
+2. Aplica a customizaçêo do vertical (1-2 dias, conforme arquivo do nicho).
 3. Treina o cliente (2h em call).
 4. Acompanhamento por 30 dias (1 call/semana, 30min).
 
-## Tem nicho que não está aqui?
+## Tem nicho que nêo está aqui?
 
-Sim — esses 4 são os mais lucrativos pro perfil "operação BR média". Outros que cabem no boilerplate:
-- Educação (cursos, professores particulares)
+Sim — esses 4 sêo os mais lucrativos pro perfil "operaçêo BR média". Outros que cabem no boilerplate:
+- Educaçêo (cursos, professores particulares)
 - Beleza (salões, barbearias, estética)
 - Restaurante delivery
 - Eventos / casamentos

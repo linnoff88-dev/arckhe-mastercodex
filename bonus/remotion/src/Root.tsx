@@ -33,12 +33,12 @@ export function Root() {
         schema={productDemoSchema}
         defaultProps={{
           productName: "InboxAI",
-          feature: "Qualificação automática de lead",
+          feature: "Qualificaçêo automática de lead",
           steps: [
             "Cliente manda mensagem no WhatsApp",
-            "Agente IA classifica intenção em 2s",
+            "Agente IA classifica intençêo em 2s",
             "Lead vai pro pipeline correto automaticamente",
-            "Você só intervém quando vira negociação",
+            "Você só intervém quando vira negociaçêo",
           ],
           accentColor: "#6366f1",
         }}

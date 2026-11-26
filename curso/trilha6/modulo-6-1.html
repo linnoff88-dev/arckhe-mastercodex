@@ -91,7 +91,7 @@
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">1</span>
         <h2 class="text-2xl font-bold">☁️ Codex Cloud: Agente Roda no Servidor da OpenAI</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Cloud é um <strong class="text-rose-400">ambiente isolado no servidor da OpenAI</strong> que executa o agente sem depender do seu laptop. Você descreve a tarefa, fecha o notebook, e horas depois encontra a PR pronta esperando revisão.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Cloud é um <strong class="text-rose-400">ambiente isolado no servidor da OpenAI</strong> que executa o agente sem depender do seu laptop. Você descreve a tarefa, fecha o notebook, e horas depois encontra a PR pronta esperando revisêo.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-rose-400 mb-4">🔄 Local vs Cloud — Fluxo Operacional</h3>
@@ -133,7 +133,7 @@
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-3">📊 Por que isso importa pra fábrica</h3>
-        <p class="text-neutral-300">Quando você opera 1 SaaS por semana com 10 clientes ativos, o gargalo não é digitação — é tempo da sua máquina ligada. Cloud paraleliza N tarefas <strong>sem ocupar seu local</strong>. Enquanto Cloud builda um vertical novo, você atende cliente. À noite, desliga o laptop e a obra continua. Throughput dobra sem cobrar mais horas suas.</p>
+        <p class="text-neutral-300">Quando você opera 1 SaaS por semana com 10 clientes ativos, o gargalo nêo é digitaçêo — é tempo da sua máquina ligada. Cloud paraleliza N tarefas <strong>sem ocupar seu local</strong>. Enquanto Cloud builda um vertical novo, você atende cliente. À noite, desliga o laptop e a obra continua. Throughput dobra sem cobrar mais horas suas.</p>
       </div>
     </section>
 
@@ -148,9 +148,9 @@
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-rose-400 mb-4">📋 Checklist do Setup</h3>
         <div class="space-y-3">
-          <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg"><span class="text-rose-400 font-bold">1.</span><div><div class="text-sm font-semibold text-neutral-200">Acessar codex.openai.com → Settings → GitHub</div><div class="text-xs text-neutral-500">Página de configuração da integração</div></div></div>
+          <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg"><span class="text-rose-400 font-bold">1.</span><div><div class="text-sm font-semibold text-neutral-200">Acessar codex.openai.com → Settings → GitHub</div><div class="text-xs text-neutral-500">Página de configuraçêo da integraçêo</div></div></div>
           <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg"><span class="text-rose-400 font-bold">2.</span><div><div class="text-sm font-semibold text-neutral-200">Autorizar via OAuth (Authorize OpenAI Codex)</div><div class="text-xs text-neutral-500">Confirma identidade no GitHub e gera token</div></div></div>
-          <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg"><span class="text-rose-400 font-bold">3.</span><div><div class="text-sm font-semibold text-neutral-200">Escolher repos: "Only selected repositories"</div><div class="text-xs text-neutral-500">NUNCA "All repositories" em produção</div></div></div>
+          <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg"><span class="text-rose-400 font-bold">3.</span><div><div class="text-sm font-semibold text-neutral-200">Escolher repos: "Only selected repositories"</div><div class="text-xs text-neutral-500">NUNCA "All repositories" em produçêo</div></div></div>
           <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg"><span class="text-rose-400 font-bold">4.</span><div><div class="text-sm font-semibold text-neutral-200">Definir escopos: Contents (write), Pull requests (write), Issues (write)</div><div class="text-xs text-neutral-500">Mínimo necessário para abrir PR e responder issue</div></div></div>
           <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg"><span class="text-rose-400 font-bold">5.</span><div><div class="text-sm font-semibold text-neutral-200">Validar com tarefa-piloto (criar branch e abrir PR teste)</div><div class="text-xs text-neutral-500">Smoke test antes de delegar coisa real</div></div></div>
         </div>
@@ -158,7 +158,7 @@
 
       <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
         <h3 class="text-lg font-semibold text-red-400 mb-3">⚠️ Erro caro de setup</h3>
-        <p class="text-neutral-300">Autorizar "All repositories" em organização com clientes pagantes deixa o agente acessível a todo repo — incluindo os privados de outros projetos. Use sempre <strong>fine-grained access</strong> com lista explícita. Quando criar um repo novo, volte e adicione manualmente. O minuto extra economiza acidentes que custam clientes.</p>
+        <p class="text-neutral-300">Autorizar "All repositories" em organizaçêo com clientes pagantes deixa o agente acessível a todo repo — incluindo os privados de outros projetos. Use sempre <strong>fine-grained access</strong> com lista explícita. Quando criar um repo novo, volte e adicione manualmente. O minuto extra economiza acidentes que custam clientes.</p>
       </div>
     </section>
 
@@ -168,7 +168,7 @@
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">3</span>
         <h2 class="text-2xl font-bold">📤 Delegando uma Tarefa ao Cloud</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">No App, você dirige em tempo real e corrige no caminho. No Cloud, <strong class="text-rose-400">o agente está sozinho</strong> — então a descrição precisa ser blindada: contexto, escopo, critério de pronto e ramo de destino, tudo explícito.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">No App, você dirige em tempo real e corrige no caminho. No Cloud, <strong class="text-rose-400">o agente está sozinho</strong> — entêo a descriçêo precisa ser blindada: contexto, escopo, critério de pronto e ramo de destino, tudo explícito.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-rose-400 mb-4">📝 Template de Brief para Cloud</h3>
@@ -178,7 +178,7 @@ Implementar lembrete automático de consulta no InboxAI-Clinica.
 ## Contexto
 - Repo: inema/inboxai-clinica (branch base: main)
 - Stack: Next.js 15 + Convex + Tailwind
-- Convenção: AGENTS.md tem padrões; siga-os.
+- Convençêo: AGENTS.md tem padrões; siga-os.
 
 ## Escopo
 1. Adicionar tabela `appointments` no schema Convex.
@@ -186,8 +186,8 @@ Implementar lembrete automático de consulta no InboxAI-Clinica.
 3. UI: nova página /agenda com lista de próximos 7 dias.
 
 ## Fora de escopo
-- Não alterar layout do dashboard existente.
-- Não tocar em integrações de pagamento.
+- Nêo alterar layout do dashboard existente.
+- Nêo tocar em integrações de pagamento.
 
 ## Definition of Done
 - [ ] Schema migrado e tipado.
@@ -202,7 +202,7 @@ feat/clinica-lembretes</code></pre>
 
       <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Regra do contexto async</h3>
-        <p class="text-neutral-300">Cada ambiguidade não resolvida no brief vira <strong>1h de retrabalho</strong>. Vale 5 minutos a mais escrevendo "fora de escopo" e "definition of done" do que descobrir que o agente reescreveu o que não devia. Templates são patrimônio: salve em <code class="text-rose-400">.codex/briefs/</code> no repo.</p>
+        <p class="text-neutral-300">Cada ambiguidade nêo resolvida no brief vira <strong>1h de retrabalho</strong>. Vale 5 minutos a mais escrevendo "fora de escopo" e "definition of done" do que descobrir que o agente reescreveu o que nêo devia. Templates sêo patrimônio: salve em <code class="text-rose-400">.codex/briefs/</code> no repo.</p>
       </div>
     </section>
 
@@ -212,10 +212,10 @@ feat/clinica-lembretes</code></pre>
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">4</span>
         <h2 class="text-2xl font-bold">📋 PR Automático com Summary e Test Plan</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Cloud não devolve só um diff — devolve <strong class="text-rose-400">PR completa</strong>: branch nova, commits semânticos, descrição estruturada. Esse é o padrão profissional que destrava revisão de cliente, equipe e do próprio @codex review.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Cloud nêo devolve só um diff — devolve <strong class="text-rose-400">PR completa</strong>: branch nova, commits semânticos, descriçêo estruturada. Esse é o padrêo profissional que destrava revisêo de cliente, equipe e do próprio @codex review.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
-        <h3 class="text-base font-semibold text-rose-400 mb-4">📄 Estrutura padrão da PR</h3>
+        <h3 class="text-base font-semibold text-rose-400 mb-4">📄 Estrutura padrêo da PR</h3>
         <pre class="bg-dark-900/60 rounded-lg p-4 text-xs text-neutral-300 overflow-x-auto"><code>feat(clinica): lembretes automáticos de consulta via WhatsApp
 
 ## Summary
@@ -225,12 +225,12 @@ feat/clinica-lembretes</code></pre>
 
 ## Test Plan
 - [ ] Rodar `npm test` (cobre schema e lógica do cron).
-- [ ] Criar consulta para amanhã via UI; aguardar 18h e validar envio.
+- [ ] Criar consulta para amanhê via UI; aguardar 18h e validar envio.
 - [ ] Cancelar consulta; confirmar que cron pula a entrada.
 - [ ] Testar em Convex dev antes de merge para develop.
 
 ## Out of scope
-- Não cobre lembrete por e-mail (issue #142 acompanha).</code></pre>
+- Nêo cobre lembrete por e-mail (issue #142 acompanha).</code></pre>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -247,9 +247,9 @@ feat/clinica-lembretes</code></pre>
         <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-5">
           <h4 class="font-bold text-red-400 mb-3">❌ PR ruim</h4>
           <ul class="space-y-1 text-sm text-neutral-300">
-            <li>• Título "atualização"</li>
+            <li>• Título "atualizaçêo"</li>
             <li>• 30 commits desorganizados</li>
-            <li>• Sem descrição</li>
+            <li>• Sem descriçêo</li>
             <li>• Mistura refactor + feature</li>
             <li>• Quebra testes existentes</li>
           </ul>
@@ -270,7 +270,7 @@ feat/clinica-lembretes</code></pre>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="bg-dark-700/50 rounded-lg p-4">
             <h4 class="font-bold text-rose-400 text-sm mb-2">🐛 Bugs lógicos</h4>
-            <p class="text-xs text-neutral-400">Off-by-one, null deref, race conditions, validação ausente.</p>
+            <p class="text-xs text-neutral-400">Off-by-one, null deref, race conditions, validaçêo ausente.</p>
           </div>
           <div class="bg-dark-700/50 rounded-lg p-4">
             <h4 class="font-bold text-rose-400 text-sm mb-2">🔐 Segurança</h4>
@@ -289,7 +289,7 @@ feat/clinica-lembretes</code></pre>
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-3">📌 Workflow real</h3>
-        <p class="text-neutral-300">Cloud abre PR → você comenta <code class="text-rose-400">@codex review</code> → 2 minutos depois aparece review estruturado → você lê só os pontos sinalizados como "high severity" → decide aceitar ou pedir ajuste. <strong>De 30 minutos de revisão humana, sobram 5</strong>. O resto é decisão, não leitura.</p>
+        <p class="text-neutral-300">Cloud abre PR → você comenta <code class="text-rose-400">@codex review</code> → 2 minutos depois aparece review estruturado → você lê só os pontos sinalizados como "high severity" → decide aceitar ou pedir ajuste. <strong>De 30 minutos de revisêo humana, sobram 5</strong>. O resto é decisêo, nêo leitura.</p>
       </div>
     </section>
 
@@ -299,7 +299,7 @@ feat/clinica-lembretes</code></pre>
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-rose-500/20 text-rose-400 font-bold text-xl">6</span>
         <h2 class="text-2xl font-bold">👨‍💻 Workflow Profissional: Solo + Cloud + Review</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">A combinação que multiplica throughput sem virar caos: você dispara N tarefas no Cloud, cada uma vira PR, cada PR passa pelo @codex review. <strong class="text-rose-400">Você só atua nos pontos sinalizados</strong> — o resto roda sozinho.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">A combinaçêo que multiplica throughput sem virar caos: você dispara N tarefas no Cloud, cada uma vira PR, cada PR passa pelo @codex review. <strong class="text-rose-400">Você só atua nos pontos sinalizados</strong> — o resto roda sozinho.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-rose-400 mb-4">🏭 Pipeline do Solo Dev Moderno</h3>
@@ -357,7 +357,7 @@ feat/clinica-lembretes</code></pre>
 
       <div class="bg-rose-900/20 rounded-xl border border-rose-500/30 p-6">
         <h3 class="text-lg font-semibold text-rose-400 mb-3">🚀 O que isso destrava</h3>
-        <p class="text-neutral-300">Sem essa orquestração, você executa <strong>1 tarefa por vez sequencialmente</strong>. Com ela, opera 4–8 em paralelo com revisão automatizada de qualidade — o que era trabalho de equipe vira routine de 2h diárias. É a diferença entre cobrar <strong class="text-rose-400">R$ 5k de freela</strong> e operar <strong class="text-rose-400">R$ 15k/mês recorrente</strong> com 10 clientes.</p>
+        <p class="text-neutral-300">Sem essa orquestraçêo, você executa <strong>1 tarefa por vez sequencialmente</strong>. Com ela, opera 4–8 em paralelo com revisêo automatizada de qualidade — o que era trabalho de equipe vira routine de 2h diárias. É a diferença entre cobrar <strong class="text-rose-400">R$ 5k de freela</strong> e operar <strong class="text-rose-400">R$ 15k/mês recorrente</strong> com 10 clientes.</p>
       </div>
     </section>
 
@@ -367,16 +367,16 @@ feat/clinica-lembretes</code></pre>
         <span class="inline-flex items-center px-3 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs font-semibold uppercase tracking-wider">Casos reais</span>
         <h2 class="text-2xl font-bold">🇧🇷 Estudos de Caso: Codex Cloud + GitHub PRs em Equipe Solo</h2>
       </div>
-      <p class="text-neutral-400 mb-8">Três devs solo brasileiros que escalaram operação combinando Codex Cloud com revisão automatizada via @codex review nas PRs.</p>
+      <p class="text-neutral-400 mb-8">Três devs solo brasileiros que escalaram operaçêo combinando Codex Cloud com revisêo automatizada via @codex review nas PRs.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <div class="flex items-center justify-between mb-4">
           <h3 class="text-lg font-semibold text-rose-400">DataSenge Consulting</h3>
-          <span class="text-xs text-neutral-500">São Paulo · Consultoria de dados</span>
+          <span class="text-xs text-neutral-500">Sêo Paulo · Consultoria de dados</span>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">DOR</div><div class="text-sm text-neutral-300">Sócio dev gerencia 8 clientes e o code review virou gargalo do entregável.</div></div>
-          <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">SOLUÇÃO</div><div class="text-sm text-neutral-300">Workflow Cloud + @codex review automático em todas as PRs antes do humano.</div></div>
+          <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">SOLUÇêO</div><div class="text-sm text-neutral-300">Workflow Cloud + @codex review automático em todas as PRs antes do humano.</div></div>
           <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">RESULTADO</div><div class="text-sm text-emerald-400">Throughput 3x maior, zero bugs vazados em 4 meses.</div></div>
         </div>
         <div class="bg-rose-500/10 border border-rose-500/30 rounded-lg p-4">
@@ -391,7 +391,7 @@ feat/clinica-lembretes</code></pre>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">DOR</div><div class="text-sm text-neutral-300">Solo founder com 5 projetos paralelos travando um ao outro no laptop.</div></div>
-          <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">SOLUÇÃO</div><div class="text-sm text-neutral-300">Cada projeto em worktree isolada, agentes Cloud rodando feature por feature.</div></div>
+          <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">SOLUÇêO</div><div class="text-sm text-neutral-300">Cada projeto em worktree isolada, agentes Cloud rodando feature por feature.</div></div>
           <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">RESULTADO</div><div class="text-sm text-emerald-400">5 deploys/semana operando sozinho como único dev.</div></div>
         </div>
         <div class="bg-rose-500/10 border border-rose-500/30 rounded-lg p-4">
@@ -406,11 +406,11 @@ feat/clinica-lembretes</code></pre>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">DOR</div><div class="text-sm text-neutral-300">Dois fundadores devs com build do MVP travado em scope creep contínuo.</div></div>
-          <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">SOLUÇÃO</div><div class="text-sm text-neutral-300">Definição rígida de DoD + Cloud entregando cada feature em PR isolada.</div></div>
+          <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">SOLUÇêO</div><div class="text-sm text-neutral-300">Definiçêo rígida de DoD + Cloud entregando cada feature em PR isolada.</div></div>
           <div class="bg-dark-700/50 rounded-lg p-3"><div class="text-xs text-neutral-500 mb-1">RESULTADO</div><div class="text-sm text-emerald-400">Lançamento em 6 semanas vs. 4 meses planejados originalmente.</div></div>
         </div>
         <div class="bg-rose-500/10 border border-rose-500/30 rounded-lg p-4">
-          <p class="text-sm text-neutral-300"><strong>Detalhe técnico:</strong> @codex review identificou 12 bugs antes de chegar na revisão humana — economia direta de horas e proteção contra regressões silenciosas.</p>
+          <p class="text-sm text-neutral-300"><strong>Detalhe técnico:</strong> @codex review identificou 12 bugs antes de chegar na revisêo humana — economia direta de horas e proteçêo contra regressões silenciosas.</p>
         </div>
       </div>
     </section>
@@ -423,8 +423,8 @@ feat/clinica-lembretes</code></pre>
           <div class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><div><strong class="text-white">Cloud roda agente sem seu laptop</strong><span class="text-neutral-400"> — paraleliza N tarefas; você desbloqueia o caminho crítico.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><div><strong class="text-white">GitHub setup com fine-grained access</strong><span class="text-neutral-400"> — nunca "All repositories"; protege sua carteira de clientes.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><div><strong class="text-white">Brief async exige template robusto</strong><span class="text-neutral-400"> — contexto + escopo + DoD + branch; salve em .codex/briefs/.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><div><strong class="text-white">PR padrão: Summary + Test Plan + Out of scope</strong><span class="text-neutral-400"> — destrava revisão sua, do cliente e do @codex review.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><div><strong class="text-white">@codex review é segundo par de olhos automatizado</strong><span class="text-neutral-400"> — 30 min de revisão viram 5; você só decide.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><div><strong class="text-white">PR padrêo: Summary + Test Plan + Out of scope</strong><span class="text-neutral-400"> — destrava revisêo sua, do cliente e do @codex review.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><div><strong class="text-white">@codex review é segundo par de olhos automatizado</strong><span class="text-neutral-400"> — 30 min de revisêo viram 5; você só decide.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-rose-400 mt-1">✓</span><div><strong class="text-white">Solo + Cloud + Review = throughput de equipe</strong><span class="text-neutral-400"> — 4–8 PRs/dia operando sozinho com qualidade.</span></div></div>
         </div>
         <div class="bg-dark-800/50 rounded-lg p-4 mb-8">

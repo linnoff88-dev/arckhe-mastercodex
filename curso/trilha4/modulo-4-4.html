@@ -74,7 +74,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="inline-block px-3 py-1 bg-amber-500/20 text-amber-400 text-xs font-semibold rounded-full mb-4">MÓDULO 4.4</span>
       <h1 class="text-3xl sm:text-4xl font-bold mb-4">🔐 Auth Multi-tenant + Deploy</h1>
-      <p class="text-lg text-neutral-400 max-w-3xl">Multi-tenant blindado, login com Clerk, RLS pra isolar clientes, secrets corretamente, Vercel + Convex Cloud em produção e domínio próprio com SSL no automático — InboxAI ao vivo na web.</p>
+      <p class="text-lg text-neutral-400 max-w-3xl">Multi-tenant blindado, login com Clerk, RLS pra isolar clientes, secrets corretamente, Vercel + Convex Cloud em produçêo e domínio próprio com SSL no automático — InboxAI ao vivo na web.</p>
       <div class="grid grid-cols-4 gap-4 mt-8 max-w-lg">
         <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">6</div><div class="text-xs text-neutral-400">Tópicos</div></div>
         <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">75</div><div class="text-xs text-neutral-400">Minutos</div></div>
@@ -92,25 +92,25 @@
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">1</span>
         <h2 class="text-2xl font-bold">🏢 Multi-tenant: isolamento por cliente</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Sem multi-tenant, você não vende SaaS — vende projeto. <strong class="text-amber-400">Multi-tenant bem feito permite cobrar 10 clientes no mesmo backend</strong> e escalar margem sem proporcionalmente escalar custo.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Sem multi-tenant, você nêo vende SaaS — vende projeto. <strong class="text-amber-400">Multi-tenant bem feito permite cobrar 10 clientes no mesmo backend</strong> e escalar margem sem proporcionalmente escalar custo.</p>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-          <div class="text-xs text-neutral-500 mb-1">PADRÃO 1</div>
+          <div class="text-xs text-neutral-500 mb-1">PADRêO 1</div>
           <div class="text-3xl mb-3">🏞️</div>
           <h4 class="font-bold text-blue-400 mb-2">Shared schema</h4>
           <p class="text-sm text-neutral-400 mb-3">Uma tabela <code class="text-amber-400">contacts</code> pra todos. Filtra por <code class="text-amber-400">orgId</code>. Mais simples, melhor custo, requer RLS rigoroso.</p>
           <div class="text-xs text-emerald-400">✓ Recomendado pra InboxAI</div>
         </div>
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-          <div class="text-xs text-neutral-500 mb-1">PADRÃO 2</div>
+          <div class="text-xs text-neutral-500 mb-1">PADRêO 2</div>
           <div class="text-3xl mb-3">🏘️</div>
           <h4 class="font-bold text-yellow-400 mb-2">Schema por tenant</h4>
-          <p class="text-sm text-neutral-400 mb-3">Cada cliente em schema/database próprio. Isolamento físico. Operação muito mais cara.</p>
+          <p class="text-sm text-neutral-400 mb-3">Cada cliente em schema/database próprio. Isolamento físico. Operaçêo muito mais cara.</p>
           <div class="text-xs text-yellow-400">! Apenas se compliance exigir</div>
         </div>
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
-          <div class="text-xs text-neutral-500 mb-1">PADRÃO 3</div>
+          <div class="text-xs text-neutral-500 mb-1">PADRêO 3</div>
           <div class="text-3xl mb-3">🏰</div>
           <h4 class="font-bold text-red-400 mb-2">Silo (deploy isolado)</h4>
           <p class="text-sm text-neutral-400 mb-3">Cada cliente tem instância completa. Boa pra enterprise, péssima pra micro-SaaS BR.</p>
@@ -148,7 +148,7 @@
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-3">📌 A regra de ouro multi-tenant</h3>
-        <p class="text-neutral-300 text-sm"><strong>Toda query do backend filtra por orgId. Sempre.</strong> Sem exceção. Se você se pegar escrevendo <code class="text-amber-400">db.query("contacts").collect()</code> sem o filtro, é bug de segurança grave. Crie um helper <code class="text-amber-400">scoped(ctx).query(...)</code> que injeta orgId automaticamente do usuário autenticado — e nunca use <code class="text-amber-400">db.query</code> direto.</p>
+        <p class="text-neutral-300 text-sm"><strong>Toda query do backend filtra por orgId. Sempre.</strong> Sem exceçêo. Se você se pegar escrevendo <code class="text-amber-400">db.query("contacts").collect()</code> sem o filtro, é bug de segurança grave. Crie um helper <code class="text-amber-400">scoped(ctx).query(...)</code> que injeta orgId automaticamente do usuário autenticado — e nunca use <code class="text-amber-400">db.query</code> direto.</p>
       </div>
     </section>
 
@@ -158,7 +158,7 @@
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">2</span>
         <h2 class="text-2xl font-bold">🔑 Auth com Clerk</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Auth caseira é receita pra vazamento. <strong class="text-amber-400">Clerk resolve em horas o que levaria semanas</strong> — e libera você pra trabalhar no que diferencia o produto, não no login.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Auth caseira é receita pra vazamento. <strong class="text-amber-400">Clerk resolve em horas o que levaria semanas</strong> — e libera você pra trabalhar no que diferencia o produto, nêo no login.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-amber-400 mb-3">🧰 O que Clerk entrega out-of-the-box</h3>
@@ -329,7 +329,7 @@ create policy "tenant_isolation" on contacts
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">4</span>
         <h2 class="text-2xl font-bold">🔒 Variáveis de ambiente: secrets corretamente</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Secret no Git é a forma mais comum de invasão. <strong class="text-amber-400">5 minutos de checklist evita boleto de R$ 50k</strong> da AWS por mineração de cripto na sua conta vazada.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Secret no Git é a forma mais comum de invasêo. <strong class="text-amber-400">5 minutos de checklist evita boleto de R$ 50k</strong> da AWS por mineraçêo de cripto na sua conta vazada.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-amber-400 mb-3">📋 Checklist de secret hygiene</h3>
@@ -339,8 +339,8 @@ create policy "tenant_isolation" on contacts
           <div class="flex items-center space-x-2"><span class="text-amber-400">☐</span> Secrets na Vercel separados por env: development / preview / production</div>
           <div class="flex items-center space-x-2"><span class="text-amber-400">☐</span> Secrets no Convex via <code class="text-amber-400">npx convex env set</code></div>
           <div class="flex items-center space-x-2"><span class="text-amber-400">☐</span> <code class="text-amber-400">gitleaks</code> rodando em pre-commit hook</div>
-          <div class="flex items-center space-x-2"><span class="text-amber-400">☐</span> Rotação automática de Clerk + Anthropic + Evolution a cada 90 dias</div>
-          <div class="flex items-center space-x-2"><span class="text-amber-400">☐</span> Variáveis client-side com prefixo <code class="text-amber-400">NEXT_PUBLIC_</code> só pra valores não-sensíveis</div>
+          <div class="flex items-center space-x-2"><span class="text-amber-400">☐</span> Rotaçêo automática de Clerk + Anthropic + Evolution a cada 90 dias</div>
+          <div class="flex items-center space-x-2"><span class="text-amber-400">☐</span> Variáveis client-side com prefixo <code class="text-amber-400">NEXT_PUBLIC_</code> só pra valores nêo-sensíveis</div>
           <div class="flex items-center space-x-2"><span class="text-amber-400">☐</span> Acesso aos paineis (Vercel/Convex/Clerk) com 2FA obrigatório</div>
         </div>
       </div>
@@ -350,7 +350,7 @@ create policy "tenant_isolation" on contacts
           <h3 class="text-base font-semibold text-amber-400">📄 Comandos de gerenciamento</h3>
           <span class="text-xs text-neutral-500">bash</span>
         </div>
-<pre class="text-xs text-neutral-300 bg-dark-900 rounded-lg p-4 overflow-x-auto"># Convex Cloud — setar secret em produção
+<pre class="text-xs text-neutral-300 bg-dark-900 rounded-lg p-4 overflow-x-auto"># Convex Cloud — setar secret em produçêo
 npx convex env set ANTHROPIC_API_KEY sk-ant-...
 
 # listar todos
@@ -373,7 +373,7 @@ git filter-repo --path .env --invert-paths</pre>
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-3">⚠️ Secret vazou — protocolo de incidente</h3>
-        <p class="text-neutral-300 text-sm"><strong>Em 5 minutos:</strong> revogue a chave no painel do provedor (não tente "trocar depois"). <strong>Em 30 minutos:</strong> rotacione TODOS os secrets do mesmo .env — assuma que vazaram juntos. <strong>Em 24h:</strong> auditoria de uso da chave (pode ter virado bot de cripto). <strong>Em 7 dias:</strong> post-mortem honesto pro cliente afetado, se houver.</p>
+        <p class="text-neutral-300 text-sm"><strong>Em 5 minutos:</strong> revogue a chave no painel do provedor (nêo tente "trocar depois"). <strong>Em 30 minutos:</strong> rotacione TODOS os secrets do mesmo .env — assuma que vazaram juntos. <strong>Em 24h:</strong> auditoria de uso da chave (pode ter virado bot de cripto). <strong>Em 7 dias:</strong> post-mortem honesto pro cliente afetado, se houver.</p>
       </div>
     </section>
 
@@ -383,7 +383,7 @@ git filter-repo --path .env --invert-paths</pre>
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">5</span>
         <h2 class="text-2xl font-bold">🚀 Deploy: Vercel + Convex Cloud</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Cliente paga por produto online, não por código no GitHub. <strong class="text-amber-400">Em 3 comandos seu InboxAI está ao vivo</strong>, com preview de cada PR e rollback de 1 clique.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Cliente paga por produto online, nêo por código no GitHub. <strong class="text-amber-400">Em 3 comandos seu InboxAI está ao vivo</strong>, com preview de cada PR e rollback de 1 clique.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-amber-400 mb-4">🛤️ Pipeline completa</h3>
@@ -429,7 +429,7 @@ npx convex login
 # 2. linkar repo
 vercel link
 
-# 3. deploy do Convex pra produção (cria URL prod)
+# 3. deploy do Convex pra produçêo (cria URL prod)
 npx convex deploy
 
 # 4. exportar URL pro Next consumir
@@ -464,7 +464,7 @@ npx convex deploy --rollback &lt;deploy-id&gt;</pre>
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">6</span>
         <h2 class="text-2xl font-bold">🌐 Domínio próprio + SSL automático</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Cliente sério não compra <code class="text-amber-400">.vercel.app</code>. Compra <code class="text-amber-400">app.suamarca.com.br</code>. <strong class="text-amber-400">Domínio próprio é o que separa MVP de produto vendável</strong>.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Cliente sério nêo compra <code class="text-amber-400">.vercel.app</code>. Compra <code class="text-amber-400">app.suamarca.com.br</code>. <strong class="text-amber-400">Domínio próprio é o que separa MVP de produto vendável</strong>.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-amber-400 mb-4">🛍️ Onde comprar (Brasil)</h3>
@@ -519,7 +519,7 @@ npx convex deploy --rollback &lt;deploy-id&gt;</pre>
           <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg">
             <span class="flex-shrink-0 w-7 h-7 rounded-full bg-amber-500/20 text-amber-400 font-bold flex items-center justify-center text-xs">3</span>
             <div>
-              <div class="font-semibold text-neutral-200">Aguarda propagação (5–60 min)</div>
+              <div class="font-semibold text-neutral-200">Aguarda propagaçêo (5–60 min)</div>
               <div class="text-xs text-neutral-400">Vercel valida automaticamente e emite SSL via Let's Encrypt</div>
             </div>
           </div>
@@ -561,16 +561,16 @@ export function middleware(req) {
       <div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
         <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> O que Aprendemos</h2>
         <div class="space-y-4 mb-8">
-          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Shared schema com orgId em toda query é o padrão pro micro-SaaS BR</strong><span class="text-neutral-400"> — silo só se compliance exigir.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Shared schema com orgId em toda query é o padrêo pro micro-SaaS BR</strong><span class="text-neutral-400"> — silo só se compliance exigir.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Clerk entrega magic link, OAuth, 2FA, organizations e roles em horas</strong><span class="text-neutral-400"> — webhook cria org no Convex.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">RLS via helper requireOrgId em cada handler</strong><span class="text-neutral-400"> — defense in depth com 3 camadas.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Secrets corretamente: .env no gitignore, painel Vercel/Convex, gitleaks, rotação 90 dias</strong><span class="text-neutral-400"> — protocolo claro se vazar.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Secrets corretamente: .env no gitignore, painel Vercel/Convex, gitleaks, rotaçêo 90 dias</strong><span class="text-neutral-400"> — protocolo claro se vazar.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Vercel + Convex Cloud em 3 comandos com preview por PR</strong><span class="text-neutral-400"> — cliente revisa antes de mergear.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">.com.br + SSL automático = produto vendável</strong><span class="text-neutral-400"> — wildcard subdomínio destrava white-label.</span></div></div>
         </div>
         <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
           <h3 class="font-semibold text-amber-400 mb-2">Próxima Trilha:</h3>
-          <p class="text-neutral-300">Trilha 5 — Sistemas Multiagente: orquestrar múltiplos agentes especializados, comunicação entre eles, supervisor pattern e quando vale a pena complicar.</p>
+          <p class="text-neutral-300">Trilha 5 — Sistemas Multiagente: orquestrar múltiplos agentes especializados, comunicaçêo entre eles, supervisor pattern e quando vale a pena complicar.</p>
         </div>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="modulo-4-3.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Anterior: Agente IA</a>

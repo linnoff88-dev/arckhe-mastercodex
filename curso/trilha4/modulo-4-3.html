@@ -117,7 +117,7 @@ Nunca diga "como IA" ou se refira a si como bot.
 
 # OBJETIVO
 Qualificar lead que chegou pelo WhatsApp em 3 informações:
-1) Procedimento de interesse (ex: harmonização, botox, limpeza)
+1) Procedimento de interesse (ex: harmonizaçêo, botox, limpeza)
 2) Convênio ou particular
 3) Cidade / disponibilidade pra ir até a clínica
 
@@ -130,21 +130,21 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
 - transferToHuman(reason): se cliente irritado, valor &gt; 5k, ou loop
 
 # RESTRIÇÕES
-- NUNCA prometa preço exato. Diga "valor varia, a Dra. confirma na avaliação".
-- NUNCA dê diagnóstico ou orientação médica.
+- NUNCA prometa preço exato. Diga "valor varia, a Dra. confirma na avaliaçêo".
+- NUNCA dê diagnóstico ou orientaçêo médica.
 - NUNCA invente horário sem chamar `scheduleCall`.
 - Se o lead falar de dor aguda, transferToHuman imediatamente.
 
 # FORMATO
 - Resposta máx 2 frases curtas.
-- 1 pergunta por vez. Não despeje 3 perguntas juntas.
+- 1 pergunta por vez. Nêo despeje 3 perguntas juntas.
 - Emoji só se o cliente usar primeiro.
-- Sempre confirme a próxima ação ("posso agendar amanhã 14h?").</pre>
+- Sempre confirme a próxima açêo ("posso agendar amanhê 14h?").</pre>
       </div>
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-3">📌 O segredo das 2 frases</h3>
-        <p class="text-neutral-300 text-sm">Cliente brasileiro no WhatsApp não lê parágrafo. Forçar "máx 2 frases" no prompt corta 80% das respostas longas e desnaturais. <strong>Mensagem curta + pergunta direta = conversão</strong>. Mensagem longa = lead some.</p>
+        <p class="text-neutral-300 text-sm">Cliente brasileiro no WhatsApp nêo lê parágrafo. Forçar "máx 2 frases" no prompt corta 80% das respostas longas e desnaturais. <strong>Mensagem curta + pergunta direta = conversêo</strong>. Mensagem longa = lead some.</p>
       </div>
     </section>
 
@@ -219,7 +219,7 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
 
       <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> A regra dos 30k</h3>
-        <p class="text-neutral-300 text-sm">Mantenha o input total &lt; 30k tokens por turno. Acima disso, qualidade cai (lost-in-the-middle) e custo dispara linearmente. Se a conversa explode, sumarize a parte antiga e descarte. <strong>Mais contexto não é melhor agente — é agente mais caro e mais confuso</strong>.</p>
+        <p class="text-neutral-300 text-sm">Mantenha o input total &lt; 30k tokens por turno. Acima disso, qualidade cai (lost-in-the-middle) e custo dispara linearmente. Se a conversa explode, sumarize a parte antiga e descarte. <strong>Mais contexto nêo é melhor agente — é agente mais caro e mais confuso</strong>.</p>
       </div>
     </section>
 
@@ -239,7 +239,7 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
 <pre class="text-xs text-neutral-300 bg-dark-900 rounded-lg p-4 overflow-x-auto">[
   {
     "name": "updateContact",
-    "description": "Atualiza dados do contato quando descoberta nova informação.",
+    "description": "Atualiza dados do contato quando descoberta nova informaçêo.",
     "input_schema": {
       "type": "object",
       "properties": {
@@ -265,7 +265,7 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
   },
   {
     "name": "scheduleCall",
-    "description": "Agenda call/avaliação. Use somente após cliente confirmar horário.",
+    "description": "Agenda call/avaliaçêo. Use somente após cliente confirmar horário.",
     "input_schema": {
       "type": "object",
       "required": ["datetimeISO"],
@@ -277,7 +277,7 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
   },
   {
     "name": "transferToHuman",
-    "description": "Transfere pra humano. Use em: irritação, valor &gt; 5k, dor aguda, loop.",
+    "description": "Transfere pra humano. Use em: irritaçêo, valor &gt; 5k, dor aguda, loop.",
     "input_schema": {
       "type": "object",
       "required": ["reason"],
@@ -319,7 +319,7 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">4</span>
         <h2 class="text-2xl font-bold">👋 Handoff humano</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Agente que insiste num cliente irritado vira <strong class="text-amber-400">reclamação no Reclame Aqui</strong>. Handoff fluido protege a marca do seu cliente e é o que separa produto profissional de bot de feirinha.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Agente que insiste num cliente irritado vira <strong class="text-amber-400">reclamaçêo no Reclame Aqui</strong>. Handoff fluido protege a marca do seu cliente e é o que separa produto profissional de bot de feirinha.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-amber-400 mb-4">🚨 Gatilhos automáticos de escalada</h3>
@@ -327,7 +327,7 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
           <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg">
             <span class="text-2xl">😡</span>
             <div>
-              <div class="font-semibold text-red-400 text-sm">Irritação detectada</div>
+              <div class="font-semibold text-red-400 text-sm">Irritaçêo detectada</div>
               <div class="text-xs text-neutral-400">Palavras-chave (cancelar, processar, péssimo) ou sentiment negativo 2 turnos seguidos. Para o bot, alerta humano em &lt; 30s.</div>
             </div>
           </div>
@@ -335,7 +335,7 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
             <span class="text-2xl">💰</span>
             <div>
               <div class="font-semibold text-amber-400 text-sm">Valor alto</div>
-              <div class="text-xs text-neutral-400">Deal estimado &gt; R$ 5k. Bot qualifica mas humano fecha. Aumenta conversão e protege ticket.</div>
+              <div class="text-xs text-neutral-400">Deal estimado &gt; R$ 5k. Bot qualifica mas humano fecha. Aumenta conversêo e protege ticket.</div>
             </div>
           </div>
           <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg">
@@ -363,7 +363,7 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
       </div>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
-        <h3 class="text-base font-semibold text-amber-400 mb-3">🎬 UX da transição (mensagem que o cliente vê)</h3>
+        <h3 class="text-base font-semibold text-amber-400 mb-3">🎬 UX da transiçêo (mensagem que o cliente vê)</h3>
         <div class="space-y-3 text-sm">
           <div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-emerald-500">
             <div class="text-emerald-400 font-semibold text-xs mb-1">✓ BOM</div>
@@ -371,14 +371,14 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
           </div>
           <div class="bg-dark-700/50 rounded-lg p-3 border-l-4 border-red-500">
             <div class="text-red-400 font-semibold text-xs mb-1">✗ RUIM</div>
-            <div class="text-neutral-300">"Não consigo te ajudar com isso. Aguarde."</div>
+            <div class="text-neutral-300">"Nêo consigo te ajudar com isso. Aguarde."</div>
           </div>
         </div>
       </div>
 
       <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> O resumo de uma frase</h3>
-        <p class="text-neutral-300 text-sm">Quando transferToHuman é chamada, sempre passa um <code class="text-amber-400">summary</code> de 1 frase. Humano abre e em 3 segundos sabe a situação. Sem isso, ele lê 30 mensagens e demora 5 min. <strong>É o detalhe que faz a equipe do cliente amar o produto</strong>.</p>
+        <p class="text-neutral-300 text-sm">Quando transferToHuman é chamada, sempre passa um <code class="text-amber-400">summary</code> de 1 frase. Humano abre e em 3 segundos sabe a situaçêo. Sem isso, ele lê 30 mensagens e demora 5 min. <strong>É o detalhe que faz a equipe do cliente amar o produto</strong>.</p>
       </div>
     </section>
 
@@ -388,7 +388,7 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">5</span>
         <h2 class="text-2xl font-bold">💰 Custos: cache, modelo, batch</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Custo de IA é o que mata margem do SaaS. <strong class="text-amber-400">A diferença entre R$ 8/cliente e R$ 80/cliente é só engenharia de custo</strong>. Aqui você aprende a fazer 90% de redução.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Custo de IA é o que mata margem do SaaS. <strong class="text-amber-400">A diferença entre R$ 8/cliente e R$ 80/cliente é só engenharia de custo</strong>. Aqui você aprende a fazer 90% de reduçêo.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 overflow-hidden mb-6">
         <table class="w-full text-sm">
@@ -396,14 +396,14 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
             <tr>
               <th class="text-left p-3 text-neutral-400 font-semibold">Técnica</th>
               <th class="text-left p-3 text-neutral-400 font-semibold">O que é</th>
-              <th class="text-center p-3 text-amber-400 font-semibold">Redução</th>
+              <th class="text-center p-3 text-amber-400 font-semibold">Reduçêo</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-dark-600">
             <tr><td class="p-3 text-amber-400 font-mono text-xs">Prompt caching</td><td class="p-3 text-neutral-300">System prompt e tools cacheados — 90% de desconto no input repetido</td><td class="p-3 text-center text-emerald-400">~75%</td></tr>
             <tr><td class="p-3 text-amber-400 font-mono text-xs">Model routing</td><td class="p-3 text-neutral-300">Haiku pra triagem (classificar intent), Sonnet só na resposta complexa</td><td class="p-3 text-center text-emerald-400">~60%</td></tr>
-            <tr><td class="p-3 text-amber-400 font-mono text-xs">Batch API</td><td class="p-3 text-neutral-300">Análise pós-fato (sentiment, qualificação retroativa) com 50% de desconto</td><td class="p-3 text-center text-emerald-400">~50%</td></tr>
-            <tr><td class="p-3 text-amber-400 font-mono text-xs">Sumarização</td><td class="p-3 text-neutral-300">Histórico longo &gt; 20 msgs vira resumo de 300 tokens</td><td class="p-3 text-center text-emerald-400">~40%</td></tr>
+            <tr><td class="p-3 text-amber-400 font-mono text-xs">Batch API</td><td class="p-3 text-neutral-300">Análise pós-fato (sentiment, qualificaçêo retroativa) com 50% de desconto</td><td class="p-3 text-center text-emerald-400">~50%</td></tr>
+            <tr><td class="p-3 text-amber-400 font-mono text-xs">Sumarizaçêo</td><td class="p-3 text-neutral-300">Histórico longo &gt; 20 msgs vira resumo de 300 tokens</td><td class="p-3 text-center text-emerald-400">~40%</td></tr>
             <tr><td class="p-3 text-amber-400 font-mono text-xs">Stop early</td><td class="p-3 text-neutral-300">Cap de 6 loops e max_tokens=300 cortam loop perdido</td><td class="p-3 text-center text-emerald-400">~20%</td></tr>
           </tbody>
         </table>
@@ -413,7 +413,7 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
         <h3 class="text-base font-semibold text-amber-400 mb-3">🧮 Custo unitário real (Claude Sonnet 4.6, 2026)</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
           <div class="bg-red-900/20 rounded-lg p-4 border border-red-500/30">
-            <div class="text-red-400 font-bold mb-1">SEM otimização</div>
+            <div class="text-red-400 font-bold mb-1">SEM otimizaçêo</div>
             <div class="text-2xl font-bold text-red-400">R$ 0,42</div>
             <div class="text-xs text-neutral-400 mt-1">por conversa de 8 turnos</div>
           </div>
@@ -425,14 +425,14 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
           <div class="bg-emerald-900/20 rounded-lg p-4 border border-emerald-500/30">
             <div class="text-emerald-400 font-bold mb-1">COM tudo</div>
             <div class="text-2xl font-bold text-emerald-400">R$ 0,04</div>
-            <div class="text-xs text-neutral-400 mt-1">cache + routing + sumarização</div>
+            <div class="text-xs text-neutral-400 mt-1">cache + routing + sumarizaçêo</div>
           </div>
         </div>
       </div>
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-3">📌 Unit economics do InboxAI</h3>
-        <p class="text-neutral-300 text-sm">Cliente pagando R$ 1.500/mês com média de 800 conversas/mês. Custo IA otimizado: <strong>R$ 32/mês</strong>. Custo IA não-otimizado: <strong>R$ 336/mês</strong>. A diferença não é técnica — é econômica. Margem de 95% vs 78%. <strong>Esse delta é o que paga seu próprio salário</strong>.</p>
+        <p class="text-neutral-300 text-sm">Cliente pagando R$ 1.500/mês com média de 800 conversas/mês. Custo IA otimizado: <strong>R$ 32/mês</strong>. Custo IA nêo-otimizado: <strong>R$ 336/mês</strong>. A diferença nêo é técnica — é econômica. Margem de 95% vs 78%. <strong>Esse delta é o que paga seu próprio salário</strong>.</p>
       </div>
     </section>
 
@@ -442,13 +442,13 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">6</span>
         <h2 class="text-2xl font-bold">👁️ Observabilidade</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Cliente vai perguntar "por que o bot disse isso?". Sem log, você fica mudo. <strong class="text-amber-400">LGPD obriga rastreabilidade</strong> — sem ela, multa de até 2% do faturamento. Painel de auditoria não é luxo, é compliance.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Cliente vai perguntar "por que o bot disse isso?". Sem log, você fica mudo. <strong class="text-amber-400">LGPD obriga rastreabilidade</strong> — sem ela, multa de até 2% do faturamento. Painel de auditoria nêo é luxo, é compliance.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-amber-400 mb-4">📋 O que logar a cada turno</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
           <div class="bg-dark-700/50 rounded-lg p-3"><span class="text-amber-400 font-mono text-xs">conversationId</span><div class="text-neutral-400 text-xs mt-1">Cross-reference com a thread</div></div>
-          <div class="bg-dark-700/50 rounded-lg p-3"><span class="text-amber-400 font-mono text-xs">model + temperature</span><div class="text-neutral-400 text-xs mt-1">Reproduzir ou comparar versão</div></div>
+          <div class="bg-dark-700/50 rounded-lg p-3"><span class="text-amber-400 font-mono text-xs">model + temperature</span><div class="text-neutral-400 text-xs mt-1">Reproduzir ou comparar versêo</div></div>
           <div class="bg-dark-700/50 rounded-lg p-3"><span class="text-amber-400 font-mono text-xs">inputTokens / outputTokens</span><div class="text-neutral-400 text-xs mt-1">Custo por turno e por cliente</div></div>
           <div class="bg-dark-700/50 rounded-lg p-3"><span class="text-amber-400 font-mono text-xs">cacheHitTokens</span><div class="text-neutral-400 text-xs mt-1">Saúde do prompt caching</div></div>
           <div class="bg-dark-700/50 rounded-lg p-3"><span class="text-amber-400 font-mono text-xs">toolsCalled[]</span><div class="text-neutral-400 text-xs mt-1">Auditoria do que o agente fez</div></div>
@@ -464,13 +464,13 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
           <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">📤</span><div><strong>Portabilidade</strong> — endpoint <code class="text-amber-400">GET /lgpd/export?phone=...</code> retorna JSON com toda mensagem e log do contato.</div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">🗑️</span><div><strong>Esquecimento</strong> — <code class="text-amber-400">POST /lgpd/forget</code> apaga ou anonimiza mensagens, mantém só audit trail mínimo legal.</div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">📜</span><div><strong>Acesso</strong> — cliente operador pode ver tudo do contato dele (já tem). ANPD pode requisitar.</div></div>
-          <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">⏰</span><div><strong>Retenção</strong> — política de delete automático após 24 meses sem interação. Configurável por cliente.</div></div>
+          <div class="flex items-start space-x-3"><span class="text-amber-400 font-bold">⏰</span><div><strong>Retençêo</strong> — política de delete automático após 24 meses sem interaçêo. Configurável por cliente.</div></div>
         </div>
       </div>
 
       <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> Painel de auditoria interno</h3>
-        <p class="text-neutral-300 text-sm">Crie uma tela <code class="text-amber-400">/admin/agent-audit/:conversationId</code> que mostra timeline: cada turno, prompt completo enviado, resposta, tools chamadas, custo, latência. <strong>Isso reduz suporte em 80%</strong> — você não precisa abrir banco pra responder "por que ele fez X". É a diferença de operação amadora vs profissional.</p>
+        <p class="text-neutral-300 text-sm">Crie uma tela <code class="text-amber-400">/admin/agent-audit/:conversationId</code> que mostra timeline: cada turno, prompt completo enviado, resposta, tools chamadas, custo, latência. <strong>Isso reduz suporte em 80%</strong> — você nêo precisa abrir banco pra responder "por que ele fez X". É a diferença de operaçêo amadora vs profissional.</p>
       </div>
     </section>
 
@@ -482,8 +482,8 @@ Após coletar as 3, chame `createDeal` e `scheduleCall`.
           <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">System prompt em 5 blocos: persona, objetivo, ferramentas, restrições, formato</strong><span class="text-neutral-400"> — máx 2 frases por resposta no WhatsApp BR.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Contexto em camadas mantém input &lt; 30k tokens</strong><span class="text-neutral-400"> — system cached + perfil + resumo + janela.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Function calling transforma chatbot em agente que age</strong><span class="text-neutral-400"> — createDeal, scheduleCall, transferToHuman.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">5 gatilhos de handoff humano protegem a marca</strong><span class="text-neutral-400"> — irritação, valor alto, loop, tópico sensível, pedido.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Cache + routing + sumarização cortam custo em 90%</strong><span class="text-neutral-400"> — R$ 0,42 vira R$ 0,04 por conversa.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">5 gatilhos de handoff humano protegem a marca</strong><span class="text-neutral-400"> — irritaçêo, valor alto, loop, tópico sensível, pedido.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Cache + routing + sumarizaçêo cortam custo em 90%</strong><span class="text-neutral-400"> — R$ 0,42 vira R$ 0,04 por conversa.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Logs estruturados + endpoints LGPD = compliance</strong><span class="text-neutral-400"> — painel de auditoria reduz suporte em 80%.</span></div></div>
         </div>
         <div class="bg-dark-800/50 rounded-lg p-4 mb-8">

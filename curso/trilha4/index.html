@@ -98,7 +98,7 @@
           <div class="grid grid-cols-4 gap-4 max-w-lg">
             <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">4</div><div class="text-xs text-neutral-400">Módulos</div></div>
             <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">24</div><div class="text-xs text-neutral-400">Tópicos</div></div>
-            <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">~5h</div><div class="text-xs text-neutral-400">Duração</div></div>
+            <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">~5h</div><div class="text-xs text-neutral-400">Duraçêo</div></div>
             <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600"><div class="text-xl font-bold text-amber-400">Avançado</div><div class="text-xs text-neutral-400">Nível</div></div>
           </div>
         </div>
@@ -182,8 +182,8 @@
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Comparação prática entre Convex (BaaS reativo, TypeScript first), Supabase (Postgres + auth + storage gerenciado) e Postgres puro (Neon, Railway). Cada um tem trade-off de produtividade, controle e custo.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Escolha errada vira refactor de 3 semanas no meio do projeto. Acertar no dia zero economiza tempo e dor — Convex pra MVP rápido, Supabase pra padrão SQL, Postgres puro pra escala extrema.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Comparaçêo prática entre Convex (BaaS reativo, TypeScript first), Supabase (Postgres + auth + storage gerenciado) e Postgres puro (Neon, Railway). Cada um tem trade-off de produtividade, controle e custo.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Escolha errada vira refactor de 3 semanas no meio do projeto. Acertar no dia zero economiza tempo e dor — Convex pra MVP rápido, Supabase pra padrêo SQL, Postgres puro pra escala extrema.</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">BaaS, reatividade, RLS, lock-in, custo por GB, latência de query, free tier limits.</p></div>
             </div>
           </div>
@@ -196,9 +196,9 @@
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Modelagem completa: organizations, users, contacts, conversations, messages, deals. Cada tabela com campos justificados pela operação real do produto, não pela vaidade técnica.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Modelagem completa: organizations, users, contacts, conversations, messages, deals. Cada tabela com campos justificados pela operaçêo real do produto, nêo pela vaidade técnica.</p></div>
               <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Schema bem feito é a coluna do produto. Esquema porco vira N+1 query, race condition e bug de dado fantasma. Aqui você sai com schema.ts pronto pra colar no Convex.</p></div>
-              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Entidades, atributos, normalização vs denormalização, soft delete, audit fields.</p></div>
+              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Entidades, atributos, normalizaçêo vs denormalizaçêo, soft delete, audit fields.</p></div>
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
               <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Como ligar tabelas (contact tem N messages, deal tem 1 contact), criar índices em campos de busca (telefone, status) e evitar full table scan quando o cliente cresce.</p></div>
               <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">A maioria dos travamentos em produto SaaS vem de query sem índice. Saber onde indexar desde o dia zero evita que sua "página de conversas" fique 8s lenta com 5k registros.</p></div>
-              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Foreign key, índice composto, query plan, N+1, join lateral, paginação cursor.</p></div>
+              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Foreign key, índice composto, query plan, N+1, join lateral, paginaçêo cursor.</p></div>
             </div>
           </div>
         </div>
@@ -220,12 +220,12 @@
           <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
             <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
             <span class="text-lg">🚧</span>
-            <div><span class="font-medium">Migrations sem quebrar dado</span><span class="text-neutral-500 text-sm ml-2">- Padrão zero-downtime via agente</span></div>
+            <div><span class="font-medium">Migrations sem quebrar dado</span><span class="text-neutral-500 text-sm ml-2">- Padrêo zero-downtime via agente</span></div>
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Como o agente cria migrations expand-then-contract: adiciona coluna, popula, troca código, depois remove a antiga. Nunca derruba produção.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cliente pagando R$ 2k/mês não aceita "ficou 10min fora". Migration zero-downtime é a diferença entre amador e profissional vendendo SaaS.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Como o agente cria migrations expand-then-contract: adiciona coluna, popula, troca código, depois remove a antiga. Nunca derruba produçêo.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cliente pagando R$ 2k/mês nêo aceita "ficou 10min fora". Migration zero-downtime é a diferença entre amador e profissional vendendo SaaS.</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Expand/contract, backfill, rolling deploy, schema versioning, rollback.</p></div>
             </div>
           </div>
@@ -252,9 +252,9 @@
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Backup automático no Convex/Supabase, snapshot manual antes de cada deploy crítico, política de retenção, plano de restore testado a cada 30 dias.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Perder dado de cliente é fim de relacionamento e processo trabalhista no horizonte. Backup só vale se você já testou restore — senão é placebo.</p></div>
-              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Point-in-time recovery, snapshot, retenção, RTO/RPO, drill de restore.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Backup automático no Convex/Supabase, snapshot manual antes de cada deploy crítico, política de retençêo, plano de restore testado a cada 30 dias.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Perder dado de cliente é fim de relacionamento e processo trabalhista no horizonte. Backup só vale se você já testou restore — senêo é placebo.</p></div>
+              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Point-in-time recovery, snapshot, retençêo, RTO/RPO, drill de restore.</p></div>
             </div>
           </div>
         </div>
@@ -279,13 +279,13 @@
           <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
             <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
             <span class="text-lg">🤔</span>
-            <div><span class="font-medium">O que é Evolution API e por que escolhemos</span><span class="text-neutral-500 text-sm ml-2">- Open-source, sem aprovação Meta</span></div>
+            <div><span class="font-medium">O que é Evolution API e por que escolhemos</span><span class="text-neutral-500 text-sm ml-2">- Open-source, sem aprovaçêo Meta</span></div>
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Evolution API é um wrapper open-source em volta do Baileys (cliente WhatsApp Web). Sem aprovação Meta, roda em VPS, conecta número pessoal ou business em minutos.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">A oficial WhatsApp Cloud API leva 2–6 semanas pra aprovação BSP. Cliente brasileiro PME quer ver funcionando hoje. Evolution destrava esse "hoje" pelo trade-off certo.</p></div>
-              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Baileys, BSP, Cloud API oficial, ToS WhatsApp, sessão multi-device.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Evolution API é um wrapper open-source em volta do Baileys (cliente WhatsApp Web). Sem aprovaçêo Meta, roda em VPS, conecta número pessoal ou business em minutos.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">A oficial WhatsApp Cloud API leva 2–6 semanas pra aprovaçêo BSP. Cliente brasileiro PME quer ver funcionando hoje. Evolution destrava esse "hoje" pelo trade-off certo.</p></div>
+              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Baileys, BSP, Cloud API oficial, ToS WhatsApp, sessêo multi-device.</p></div>
             </div>
           </div>
         </div>
@@ -297,9 +297,9 @@
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Comparação: rodar Evolution numa VPS Hetzner/Hostinger por R$ 30/mês vs usar provedor SaaS (UltraMsg, Z-API) que cobra R$ 100–300/mês mas tira a dor de operação.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Comparaçêo: rodar Evolution numa VPS Hetzner/Hostinger por R$ 30/mês vs usar provedor SaaS (UltraMsg, Z-API) que cobra R$ 100–300/mês mas tira a dor de operaçêo.</p></div>
               <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Margem do seu SaaS depende disso. Self-host dá margem de 70%; cloud terceirizado fica em 30%. Saber operar destrava preço competitivo no BR.</p></div>
-              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">VPS, uptime SLA, custo operacional, terceirização, build vs buy.</p></div>
+              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">VPS, uptime SLA, custo operacional, terceirizaçêo, build vs buy.</p></div>
             </div>
           </div>
         </div>
@@ -312,7 +312,7 @@
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
               <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">docker-compose.yml com Evolution + Postgres + Redis. Sobe num comando, expõe porta 8080 com painel web. Inclui variáveis de ambiente, volume persistente e healthcheck.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Docker abstrai 80% da operação. Mesmo comando local e em produção. É a diferença entre "funciona na minha máquina" e "funciona em qualquer cliente".</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Docker abstrai 80% da operaçêo. Mesmo comando local e em produçêo. É a diferença entre "funciona na minha máquina" e "funciona em qualquer cliente".</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">docker-compose, volumes, networks, env vars, healthcheck, restart policy.</p></div>
             </div>
           </div>
@@ -321,12 +321,12 @@
           <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
             <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
             <span class="text-lg">📲</span>
-            <div><span class="font-medium">Conectando WhatsApp pessoal</span><span class="text-neutral-500 text-sm ml-2">- QR code, sessão e reconnect</span></div>
+            <div><span class="font-medium">Conectando WhatsApp pessoal</span><span class="text-neutral-500 text-sm ml-2">- QR code, sessêo e reconnect</span></div>
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Endpoint que gera QR code pra escanear com o WhatsApp do cliente. Sessão fica persistida no banco. Quando cair, reconecta sozinho — você não precisa pedir QR de novo.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sessão que cai e exige QR toda vez é UX horrível pro cliente. Persistência e reconnect automático são o que faz o sistema "sumir" no bom sentido.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Endpoint que gera QR code pra escanear com o WhatsApp do cliente. Sessêo fica persistida no banco. Quando cair, reconecta sozinho — você nêo precisa pedir QR de novo.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sessêo que cai e exige QR toda vez é UX horrível pro cliente. Persistência e reconnect automático sêo o que faz o sistema "sumir" no bom sentido.</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">QR code pairing, multi-device, session persistence, reconnect backoff, logout remoto.</p></div>
             </div>
           </div>
@@ -335,12 +335,12 @@
           <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
             <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
             <span class="text-lg">🔔</span>
-            <div><span class="font-medium">Webhooks: receber mensagens</span><span class="text-neutral-500 text-sm ml-2">- Endpoint POST + validação</span></div>
+            <div><span class="font-medium">Webhooks: receber mensagens</span><span class="text-neutral-500 text-sm ml-2">- Endpoint POST + validaçêo</span></div>
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
               <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Endpoint /webhook/evolution no seu backend que recebe POST sempre que chega mensagem. Você valida assinatura, salva no banco, dispara o agente IA.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Webhook é o coração do produto. Errar aqui (idempotência, ordem, erro silencioso) é perder mensagem do cliente — pior bug que existe nesse domínio.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Webhook é o coraçêo do produto. Errar aqui (idempotência, ordem, erro silencioso) é perder mensagem do cliente — pior bug que existe nesse domínio.</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Webhook, idempotência, retry, assinatura HMAC, dead-letter queue.</p></div>
             </div>
           </div>
@@ -353,8 +353,8 @@
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Função sendMessage(to, payload) que abstrai o formato JSON da Evolution para texto, imagem (URL ou base64), áudio (mp3/ogg) e document (PDF). Inclui rate limit interno.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Mandar mensagem rápido demais derruba a sessão por flood. Saber respeitar limite e reaproveitar conexão é o que mantém o número online por meses sem cair.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Funçêo sendMessage(to, payload) que abstrai o formato JSON da Evolution para texto, imagem (URL ou base64), áudio (mp3/ogg) e document (PDF). Inclui rate limit interno.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Mandar mensagem rápido demais derruba a sessêo por flood. Saber respeitar limite e reaproveitar conexêo é o que mantém o número online por meses sem cair.</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Rate limit, throttle, base64 vs URL, mimetype, mensagens em massa, ban risk.</p></div>
             </div>
           </div>
@@ -384,7 +384,7 @@
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Estrutura do system prompt em 5 blocos: persona (quem é o agente), objetivo (qualificar lead pra reunião), ferramentas disponíveis, restrições (nunca prometer preço), formato de saída.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Estrutura do system prompt em 5 blocos: persona (quem é o agente), objetivo (qualificar lead pra reuniêo), ferramentas disponíveis, restrições (nunca prometer preço), formato de saída.</p></div>
               <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">90% dos agentes ruins têm system prompt ruim. Estrutura clara é a diferença entre "vendedor virtual que fecha venda" e "chatbot esquisito que cliente xinga".</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Persona, objetivo SMART, guardrails, formato JSON, exemplos few-shot.</p></div>
             </div>
@@ -400,7 +400,7 @@
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
               <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Como passar para o agente as últimas N mensagens + perfil do contato + histórico resumido das conversas anteriores, sem ultrapassar 30k tokens nem queimar custo.</p></div>
               <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Mandar contexto cru a cada turno custa caro e degrada qualidade. Usar resumo + última janela + cache é o que torna agente economicamente viável.</p></div>
-              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Sliding window, sumarização hierárquica, prompt caching, tokens efetivos.</p></div>
+              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Sliding window, sumarizaçêo hierárquica, prompt caching, tokens efetivos.</p></div>
             </div>
           </div>
         </div>
@@ -414,7 +414,7 @@
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
               <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Schema de funções: createDeal, scheduleCall, updateContact, transferToHuman. Agente decide quando chamar, sistema executa, retorna resultado pro próximo turno.</p></div>
               <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem function calling, agente é só um chatbot bonito. Com, ele atua de fato no produto — cria registros, marca calendário, dispara follow-up. Aí vira valor pago.</p></div>
-              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Tool use, JSON schema, validação de argumentos, ciclo agentic, retry de tool falha.</p></div>
+              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Tool use, JSON schema, validaçêo de argumentos, ciclo agentic, retry de tool falha.</p></div>
             </div>
           </div>
         </div>
@@ -427,8 +427,8 @@
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
               <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Gatilhos automáticos: agente em loop sem progresso, cliente irritado (sentiment negativo), valor de deal acima de R$ X, palavra-chave "cancelar". Sistema avisa humano e congela bot.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Agente que insiste sozinho num cliente irritado vira reclamação no Reclame Aqui. Handoff fluido é o que protege a marca do seu cliente.</p></div>
-              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Detecção de loop, sentiment, escalation rules, UX de transição, contexto repassado.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Agente que insiste sozinho num cliente irritado vira reclamaçêo no Reclame Aqui. Handoff fluido é o que protege a marca do seu cliente.</p></div>
+              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Detecçêo de loop, sentiment, escalation rules, UX de transiçêo, contexto repassado.</p></div>
             </div>
           </div>
         </div>
@@ -440,8 +440,8 @@
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Otimização: prompt caching pra economizar 90% em tokens repetidos, Haiku pra triagem barata + Sonnet pra resposta complexa, batch pra análise pós-fato (não tempo real).</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Custo de IA é o que mata margem do SaaS. Diferença entre R$ 8 por cliente/mês e R$ 80 é só engenharia de custo. Aqui você aprende a fazer 90% de redução.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Otimizaçêo: prompt caching pra economizar 90% em tokens repetidos, Haiku pra triagem barata + Sonnet pra resposta complexa, batch pra análise pós-fato (nêo tempo real).</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Custo de IA é o que mata margem do SaaS. Diferença entre R$ 8 por cliente/mês e R$ 80 é só engenharia de custo. Aqui você aprende a fazer 90% de reduçêo.</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Prompt caching, batch API, model routing, cost per conversation, unit economics.</p></div>
             </div>
           </div>
@@ -456,7 +456,7 @@
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
               <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Log estruturado de cada turno: prompt, resposta, tools chamadas, custo, latência. Painel pra auditar o que o agente fez. Endpoint LGPD de "exportar/apagar dados deste contato".</p></div>
               <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cliente vai perguntar "por que o bot disse isso?" Sem log, você fica sem resposta. LGPD obriga rastreabilidade — sem ela, multa de até 2% do faturamento.</p></div>
-              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Structured logging, traces, ANPD, direito do titular, retenção de dados.</p></div>
+              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Structured logging, traces, ANPD, direito do titular, retençêo de dados.</p></div>
             </div>
           </div>
         </div>
@@ -474,7 +474,7 @@
           <span class="text-xs text-neutral-500">~75 min</span>
         </div>
         <h3 class="text-2xl font-bold mb-2">🔐 Auth Multi-tenant + Deploy</h3>
-        <p class="text-neutral-400 text-sm">Isolamento por cliente, Clerk pra login, RLS pra blindar dados, Vercel + Convex em produção e domínio próprio com SSL no automático.</p>
+        <p class="text-neutral-400 text-sm">Isolamento por cliente, Clerk pra login, RLS pra blindar dados, Vercel + Convex em produçêo e domínio próprio com SSL no automático.</p>
       </div>
       <div class="divide-y divide-dark-600">
         <div class="topic-item">
@@ -485,8 +485,8 @@
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Modelagem onde cada cliente do aluno tem organizationId próprio. Toda query filtra por org. Usuários só veem dados da sua organização — nunca da clínica concorrente.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem multi-tenant, você não vende SaaS, vende projeto. Multi-tenant bem feito é o que permite cobrar 10 clientes no mesmo backend e escalar margem.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Modelagem onde cada cliente do aluno tem organizationId próprio. Toda query filtra por org. Usuários só veem dados da sua organizaçêo — nunca da clínica concorrente.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Sem multi-tenant, você nêo vende SaaS, vende projeto. Multi-tenant bem feito é o que permite cobrar 10 clientes no mesmo backend e escalar margem.</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Tenant ID, shared schema, isolated schema, pool pattern, silo pattern.</p></div>
             </div>
           </div>
@@ -500,7 +500,7 @@
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
               <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Setup do Clerk em 15 minutos: providers (email magic link, Google, GitHub), roles (owner, admin, agent), organizations nativas, webhook que cria registro no Convex.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Auth caseira é receita pra vazamento. Clerk resolve em horas o que levaria semanas — e libera você pra trabalhar no que diferencia o produto, não no login.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Auth caseira é receita pra vazamento. Clerk resolve em horas o que levaria semanas — e libera você pra trabalhar no que diferencia o produto, nêo no login.</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">JWT, magic link, OAuth, roles, organizations, webhooks de auth.</p></div>
             </div>
           </div>
@@ -513,7 +513,7 @@
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Padrão de queries Convex onde cada função verifica orgId do usuário autenticado e filtra. Em Supabase, mesmo princípio com policies SQL. Bug aqui = vazamento.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Padrêo de queries Convex onde cada funçêo verifica orgId do usuário autenticado e filtra. Em Supabase, mesmo princípio com policies SQL. Bug aqui = vazamento.</p></div>
               <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Em SaaS multi-tenant, RLS quebrada vira manchete. É o controle final que protege o produto contra erro humano de query mal escrita.</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">RLS, policy, identity context, defense in depth, audit trail.</p></div>
             </div>
@@ -523,13 +523,13 @@
           <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
             <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
             <span class="text-lg">🔒</span>
-            <div><span class="font-medium">Variáveis de ambiente: secrets corretamente</span><span class="text-neutral-500 text-sm ml-2">- .env, Vercel, rotação</span></div>
+            <div><span class="font-medium">Variáveis de ambiente: secrets corretamente</span><span class="text-neutral-500 text-sm ml-2">- .env, Vercel, rotaçêo</span></div>
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">.env no .gitignore, secrets na Vercel/Convex Cloud por ambiente (dev/preview/prod), checklist de rotação a cada 90 dias, scan de leaks com gitleaks.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Secret no Git é a forma mais comum de invasão. 5 minutos seguindo o checklist evita boleto de R$ 50k da AWS por mineração de cripto.</p></div>
-              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Env vars, gitignore, gitleaks, vault, rotação, princípio do menor privilégio.</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">.env no .gitignore, secrets na Vercel/Convex Cloud por ambiente (dev/preview/prod), checklist de rotaçêo a cada 90 dias, scan de leaks com gitleaks.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Secret no Git é a forma mais comum de invasêo. 5 minutos seguindo o checklist evita boleto de R$ 50k da AWS por mineraçêo de cripto.</p></div>
+              <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Env vars, gitignore, gitleaks, vault, rotaçêo, princípio do menor privilégio.</p></div>
             </div>
           </div>
         </div>
@@ -541,8 +541,8 @@
           </button>
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
-              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">vercel deploy pro frontend, npx convex deploy pro backend reativo, integração GitHub que faz preview em cada PR. Em 3 comandos seu app está ao vivo.</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cliente paga por produto online, não por código no GitHub. Deploy fluido é o que transforma "fiz" em "vendi".</p></div>
+              <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">vercel deploy pro frontend, npx convex deploy pro backend reativo, integraçêo GitHub que faz preview em cada PR. Em 3 comandos seu app está ao vivo.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Cliente paga por produto online, nêo por código no GitHub. Deploy fluido é o que transforma "fiz" em "vendi".</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">Build, edge function, preview deploy, environment, rollback de deploy.</p></div>
             </div>
           </div>
@@ -556,7 +556,7 @@
           <div class="topic-explanation px-6 pb-4">
             <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
               <div><span class="text-amber-400 font-semibold">O que é:</span><p class="text-neutral-300 text-sm">Comprar domínio (Registro.br ou Cloudflare), apontar DNS pra Vercel, SSL emitido automático via Let's Encrypt. Subdomínio por cliente (cliente1.app.com.br).</p></div>
-              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Domínio próprio é o que separa MVP de produto vendável. Cliente sério não compra .vercel.app no link — ele compra app.suamarca.com.br.</p></div>
+              <div><span class="text-amber-400 font-semibold">Por que aprender:</span><p class="text-neutral-300 text-sm">Domínio próprio é o que separa MVP de produto vendável. Cliente sério nêo compra .vercel.app no link — ele compra app.suamarca.com.br.</p></div>
               <div><span class="text-amber-400 font-semibold">Conceitos-chave:</span><p class="text-neutral-300 text-sm">DNS, CNAME, A record, Let's Encrypt, wildcard SSL, white-label.</p></div>
             </div>
           </div>

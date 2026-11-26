@@ -2,7 +2,7 @@
 
 Mapa completo das pastas relevantes do boilerplate. Quando precisar adicionar algo novo, consulte aqui pra saber **onde colocar**.
 
-## Visão geral
+## Visêo geral
 
 ```
 inboxai-boilerplate/
@@ -26,15 +26,15 @@ Todo código de servidor vive aqui. Nada de `app/api/*` no Next.
 
 ```
 convex/
-├── _generated/               # gerado automático pelo Convex CLI — NÃO editar
+├── _generated/               # gerado automático pelo Convex CLI — NêO editar
 ├── schema.ts                 # define tabelas e indexes
 ├── http.ts                   # HTTP routes (webhooks Clerk, Stripe, Evolution)
-├── auth.config.ts            # integração com Clerk
+├── auth.config.ts            # integraçêo com Clerk
 │
 ├── contact.ts                # CRUD de contato (queries + mutations)
 ├── message.ts                # CRUD de mensagem
-├── deal.ts                   # CRUD de deal + movimentação no pipeline
-├── instance.ts               # gestão de instâncias WhatsApp
+├── deal.ts                   # CRUD de deal + movimentaçêo no pipeline
+├── instance.ts               # gestêo de instâncias WhatsApp
 ├── org.ts                    # operações de org (multi-tenant)
 ├── user.ts                   # CRUD de usuário
 ├── agentConfig.ts            # config do agente IA por org
@@ -62,7 +62,7 @@ convex/
 - 1 arquivo por entidade de domínio (`contact.ts`, `deal.ts`, etc.)
 - Dentro do arquivo: queries + mutations da entidade
 - Action vai em `actions/` se faz side-effect externo
-- Helper interno (não exposto) vai em `lib/`
+- Helper interno (nêo exposto) vai em `lib/`
 
 ## `src/` — Frontend
 
@@ -73,7 +73,7 @@ src/
 │   ├── page.tsx              # landing pública
 │   ├── globals.css
 │   │
-│   ├── (auth)/               # rotas não-autenticadas
+│   ├── (auth)/               # rotas nêo-autenticadas
 │   │   ├── sign-in/[[...sign-in]]/page.tsx
 │   │   └── sign-up/[[...sign-up]]/page.tsx
 │   │
@@ -137,7 +137,7 @@ src/
 │   ├── error-messages.ts     # mensagens user-friendly
 │   ├── format.ts             # formatBRL, formatPhone, formatDate
 │   ├── cn.ts                 # tailwind classnames helper
-│   └── env.ts                # validação de env vars com Zod
+│   └── env.ts                # validaçêo de env vars com Zod
 │
 ├── hooks/                    # hooks compartilhados
 │   ├── useCurrentOrg.ts
@@ -158,11 +158,11 @@ src/
 ### Convenções
 
 - **`app/`** — só páginas e layouts. Lógica fica em `features/` ou `components/`.
-- **`components/ui/`** — shadcn/ui copiados (não dependência). Não editar assinatura, só estilizar.
+- **`components/ui/`** — shadcn/ui copiados (nêo dependência). Nêo editar assinatura, só estilizar.
 - **`components/<area>/`** — componente que pertence a uma área específica do app.
 - **`features/<area>/hooks.ts`** — hooks que combinam várias queries Convex pra entregar dado pronto pro componente.
 - **`lib/`** — funções puras, sem React, sem side-effect.
-- **`test/factories/`** — função `createDeal({ ...overrides })` que retorna deal válido pra teste.
+- **`test/factories/`** — funçêo `createDeal({ ...overrides })` que retorna deal válido pra teste.
 
 ## Onde colocar coisa nova
 
@@ -172,19 +172,19 @@ src/
 | Componente reutilizável | `src/components/<area>/<Componente>.tsx` |
 | Componente shadcn novo | `npx shadcn@latest add <comp>` (vai pra `components/ui/`) |
 | Nova entidade no banco | `convex/<entidade>.ts` + entrada em `convex/schema.ts` |
-| Função pura | `src/lib/<arquivo>.ts` |
+| Funçêo pura | `src/lib/<arquivo>.ts` |
 | Hook que combina várias queries | `src/features/<area>/hooks.ts` |
 | Chamada externa nova (ex: enviar email) | `convex/actions/<acao>.ts` |
 | Tarefa agendada | `convex/crons.ts` |
 | Webhook novo (ex: integrar com cliente) | `convex/http.ts` + handler em `convex/actions/webhookProcessors/` |
 | Prompt do agente | `convex/lib/prompts.ts` |
-| Variável de ambiente | `src/lib/env.ts` (validação Zod) + `.env.example` (documentação) |
+| Variável de ambiente | `src/lib/env.ts` (validaçêo Zod) + `.env.example` (documentaçêo) |
 | Teste unit | `src/<file>.test.ts` (co-localizado) |
 | Teste e2e | `tests/e2e/<flow>.spec.ts` (Playwright) |
 
 ## Anti-padrões
 
-- ❌ Lógica de negócio em `app/<rota>/page.tsx` — mover pra hook ou função pura.
+- ❌ Lógica de negócio em `app/<rota>/page.tsx` — mover pra hook ou funçêo pura.
 - ❌ Fetch em `useEffect` — usa `useQuery` (Convex) ou Server Component.
-- ❌ Componente em `app/<rota>/_components/` — esse padrão é antigo. Usa `src/components/`.
+- ❌ Componente em `app/<rota>/_components/` — esse padrêo é antigo. Usa `src/components/`.
 - ❌ Tipo duplicado entre Convex e front — Convex já gera tipos em `_generated/api.d.ts`. Importa de lá.

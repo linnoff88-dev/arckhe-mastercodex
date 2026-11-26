@@ -94,7 +94,7 @@
       <p class="text-neutral-300 mb-6 leading-relaxed">O layout de três colunas existe porque <strong class="text-purple-400">funciona em todo inbox profissional do mercado</strong>: Slack, Linear, Intercom, Superhuman, Front. Reinventar a roda aqui custa caro e o cliente estranha.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
-        <h3 class="text-base font-semibold text-purple-400 mb-4">📐 Wireframe — proporções e função</h3>
+        <h3 class="text-base font-semibold text-purple-400 mb-4">📐 Wireframe — proporções e funçêo</h3>
         <svg viewBox="0 0 600 300" class="w-full" xmlns="http://www.w3.org/2000/svg">
           <rect x="20" y="20" width="140" height="260" rx="6" fill="#1f2937" stroke="#7c3aed" stroke-width="1.5"/>
           <text x="90" y="14" text-anchor="middle" fill="#7c3aed" font-size="10" font-weight="bold">Lista de Conversas</text>
@@ -130,7 +130,7 @@
 
       <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
         <h3 class="text-lg font-semibold text-purple-400 mb-3">📌 Por que essas proporções</h3>
-        <p class="text-neutral-300">Lista 1fr (~280px) cabe título + preview + timestamp. Thread 2fr é onde mora o trabalho real, então ganha mais espaço. Contato 1fr aparece e some no mobile sem dor. <strong>É proporção testada por bilhões de uso de Gmail/Slack/Linear</strong> — não tente outra.</p>
+        <p class="text-neutral-300">Lista 1fr (~280px) cabe título + preview + timestamp. Thread 2fr é onde mora o trabalho real, entêo ganha mais espaço. Contato 1fr aparece e some no mobile sem dor. <strong>É proporçêo testada por bilhões de uso de Gmail/Slack/Linear</strong> — nêo tente outra.</p>
       </div>
     </section>
 
@@ -140,7 +140,7 @@
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">2</span>
         <h2 class="text-2xl font-bold">🧱 Componentes</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Componentização clara é o que destrava reuso, testes e iteração rápida. <strong class="text-purple-400">Sem ela, mudar o estilo de uma mensagem vira mudar 12 arquivos</strong>.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Componentizaçêo clara é o que destrava reuso, testes e iteraçêo rápida. <strong class="text-purple-400">Sem ela, mudar o estilo de uma mensagem vira mudar 12 arquivos</strong>.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-purple-400 mb-4">📁 Estrutura de pastas</h3>
@@ -153,7 +153,7 @@ components/
     ├── ConversationItem.tsx      # cada linha da lista
     ├── ChannelBadge.tsx          # 🟢 IG ✉️ 💬
     ├── MessageThread.tsx         # coluna central
-    ├── MessageBubble.tsx         # cada balão
+    ├── MessageBubble.tsx         # cada balêo
     ├── MessageComposer.tsx       # textarea + botões
     └── ContactPanel.tsx          # coluna direita
 lib/
@@ -198,12 +198,12 @@ export function ConversationItem({ conversation, isActive, onClick }: Props) {
       </div>
 
       <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
-        <h3 class="text-lg font-semibold text-purple-400 mb-3">🎯 Regras de componentização</h3>
+        <h3 class="text-lg font-semibold text-purple-400 mb-3">🎯 Regras de componentizaçêo</h3>
         <ul class="text-neutral-300 space-y-2 text-sm">
           <li><strong class="text-purple-400">1 componente = 1 arquivo</strong> — facilita find/replace e o agente lê melhor.</li>
-          <li><strong class="text-purple-400">Props tipadas explícitas</strong> — não use any nem inline type, o Codex se perde.</li>
+          <li><strong class="text-purple-400">Props tipadas explícitas</strong> — nêo use any nem inline type, o Codex se perde.</li>
           <li><strong class="text-purple-400">Nada de lógica de fetch dentro</strong> — componente só apresenta; estado vem por prop ou hook.</li>
-          <li><strong class="text-purple-400">Nome diz o que é, não onde está</strong> — ConversationItem, não LeftSidebarRow.</li>
+          <li><strong class="text-purple-400">Nome diz o que é, nêo onde está</strong> — ConversationItem, nêo LeftSidebarRow.</li>
         </ul>
       </div>
     </section>
@@ -229,7 +229,7 @@ export function ConversationItem({ conversation, isActive, onClick }: Props) {
         </div>
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
           <h4 class="font-bold text-purple-400 mb-3">🌊 Convex</h4>
-          <p class="text-sm text-neutral-300 mb-3">Real-time + DB acoplados. Bom pra produção e InboxAI completo.</p>
+          <p class="text-sm text-neutral-300 mb-3">Real-time + DB acoplados. Bom pra produçêo e InboxAI completo.</p>
           <ul class="text-xs text-neutral-400 space-y-1">
             <li>✓ useQuery sincroniza automaticamente</li>
             <li>✓ Mutations otimistas</li>
@@ -277,7 +277,7 @@ export type Conversation = {
 
       <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
         <h3 class="text-lg font-semibold text-purple-400 mb-3">💡 A regra: comece em Zustand, migre pra Convex</h3>
-        <p class="text-neutral-300">Na Trilha 3 estamos fazendo frontend mockado — Zustand é o suficiente. Quando chegar na Trilha 4 e plugar o backend, troque <code class="text-purple-400 bg-dark-700 px-1 rounded">useStore()</code> por <code class="text-purple-400 bg-dark-700 px-1 rounded">useQuery()</code> e os tipos já estão prontos. <strong>Zero refactor de componente</strong>.</p>
+        <p class="text-neutral-300">Na Trilha 3 estamos fazendo frontend mockado — Zustand é o suficiente. Quando chegar na Trilha 4 e plugar o backend, troque <code class="text-purple-400 bg-dark-700 px-1 rounded">useStore()</code> por <code class="text-purple-400 bg-dark-700 px-1 rounded">useQuery()</code> e os tipos já estêo prontos. <strong>Zero refactor de componente</strong>.</p>
       </div>
     </section>
 
@@ -287,7 +287,7 @@ export type Conversation = {
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xl">4</span>
         <h2 class="text-2xl font-bold">🔴 Real-time Mock</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Mockar o real-time desde o início destrava UX inteira (animação de entrada, badge de unread, scroll automático, som) <strong class="text-purple-400">sem bloquear no backend</strong>. Quando o WebSocket real chegar, é trocar a fonte.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Mockar o real-time desde o início destrava UX inteira (animaçêo de entrada, badge de unread, scroll automático, som) <strong class="text-purple-400">sem bloquear no backend</strong>. Quando o WebSocket real chegar, é trocar a fonte.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-purple-400 mb-4">⏲️ Mock com setInterval</h3>
@@ -316,8 +316,8 @@ export function useFakeIncomingMessages(intervalMs = 8000) {
           <ul class="text-sm text-neutral-300 space-y-1">
             <li>• UI estática até semana 3</li>
             <li>• Animações descobertas tarde</li>
-            <li>• Bug de race condition em produção</li>
-            <li>• Cliente não tem o que ver</li>
+            <li>• Bug de race condition em produçêo</li>
+            <li>• Cliente nêo tem o que ver</li>
           </ul>
         </div>
         <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-5">
@@ -333,7 +333,7 @@ export function useFakeIncomingMessages(intervalMs = 8000) {
 
       <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
         <h3 class="text-lg font-semibold text-purple-400 mb-3">🎯 O segredo: trate como real desde o começo</h3>
-        <p class="text-neutral-300">A função <code class="text-purple-400 bg-dark-700 px-1 rounded">addMessage</code> tem que ter <strong>exatamente a mesma assinatura</strong> que terá com Convex/WebSocket. Aí, no dia da troca, você muda 1 arquivo (a fonte de dados) e tudo continua funcionando.</p>
+        <p class="text-neutral-300">A funçêo <code class="text-purple-400 bg-dark-700 px-1 rounded">addMessage</code> tem que ter <strong>exatamente a mesma assinatura</strong> que terá com Convex/WebSocket. Aí, no dia da troca, você muda 1 arquivo (a fonte de dados) e tudo continua funcionando.</p>
       </div>
     </section>
 
@@ -404,8 +404,8 @@ export function ChannelBadge({ channel }: { channel: Channel }) {
           <thead class="bg-dark-700">
             <tr>
               <th class="text-left p-3 text-neutral-400 font-semibold">Tecla</th>
-              <th class="text-left p-3 text-neutral-400 font-semibold">Ação</th>
-              <th class="text-left p-3 text-neutral-400 font-semibold">Inspiração</th>
+              <th class="text-left p-3 text-neutral-400 font-semibold">Açêo</th>
+              <th class="text-left p-3 text-neutral-400 font-semibold">Inspiraçêo</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-dark-600">
@@ -425,7 +425,7 @@ export function ChannelBadge({ channel }: { channel: Channel }) {
         <pre class="bg-dark-900 rounded-lg p-4 overflow-x-auto text-xs text-neutral-300 leading-relaxed"><code>// hooks/useInboxKeybindings.ts
 useEffect(() =&gt; {
   const handler = (e: KeyboardEvent) =&gt; {
-    // não dispara se tá digitando em input/textarea
+    // nêo dispara se tá digitando em input/textarea
     if (e.target instanceof HTMLElement &amp;&amp;
         ['INPUT', 'TEXTAREA'].includes(e.target.tagName)) return;
 
@@ -442,7 +442,7 @@ useEffect(() =&gt; {
 
       <div class="bg-purple-900/20 rounded-xl border border-purple-500/30 p-6">
         <h3 class="text-lg font-semibold text-purple-400 mb-3">📌 A pegadinha: ignorar input/textarea</h3>
-        <p class="text-neutral-300">Sem o guard <code class="text-purple-400 bg-dark-700 px-1 rounded">if (input/textarea) return</code>, digitar "javascript" no composer arquiva 5 conversas e atribui a 2 pessoas. <strong>Esse é o bug clássico</strong> — sempre, sem exceção, ignora atalhos quando o foco está em campo de texto.</p>
+        <p class="text-neutral-300">Sem o guard <code class="text-purple-400 bg-dark-700 px-1 rounded">if (input/textarea) return</code>, digitar "javascript" no composer arquiva 5 conversas e atribui a 2 pessoas. <strong>Esse é o bug clássico</strong> — sempre, sem exceçêo, ignora atalhos quando o foco está em campo de texto.</p>
       </div>
     </section>
 
@@ -451,7 +451,7 @@ useEffect(() =&gt; {
       <div class="bg-gradient-to-br from-purple-900/40 via-dark-800 to-dark-800 rounded-xl border border-purple-500/30 p-8">
         <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> O que Aprendemos</h2>
         <div class="space-y-4 mb-8">
-          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Layout 3 colunas (1fr / 2fr / 1fr) é padrão consagrado</strong><span class="text-neutral-400"> — não reinventa, esse formato resolveu pra Slack, Linear, Intercom.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Layout 3 colunas (1fr / 2fr / 1fr) é padrêo consagrado</strong><span class="text-neutral-400"> — nêo reinventa, esse formato resolveu pra Slack, Linear, Intercom.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">7 componentes nomeados isolam mudança</strong><span class="text-neutral-400"> — ConversationItem, MessageBubble, ContactPanel etc.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Estado começa em Zustand, migra pra Convex</strong><span class="text-neutral-400"> — assinatura igual em ambos preserva os componentes.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-purple-400 mt-1">✓</span><div><strong class="text-white">Real-time mockado com setInterval destrava UX viva</strong><span class="text-neutral-400"> — animações, badges e scroll prontos antes do backend existir.</span></div></div>

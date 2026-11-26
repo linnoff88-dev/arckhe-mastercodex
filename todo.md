@@ -1,9 +1,9 @@
-# Master Codex — TODO de Implementação
+# Master Codex — TODO de Implementaçêo
 
 > **Status:** ✅ **Curso completo produzido**
 > **Total:** 31 páginas HTML (1 landing + 6 índices de trilha + 24 módulos)
 > **Linhas totais:** ~15.000 de HTML rico
-> **Padrão:** skill `formato-curso` (INEMA.CLUB)
+> **Padrêo:** skill `formato-curso` (INEMA.CLUB)
 
 ---
 
@@ -81,12 +81,12 @@
 
 ## Fase 7 — Polimento final (próximas ações sugeridas)
 
-- [ ] Revisão visual page-a-page (light + dark) em browser real
-- [ ] Validar todos os links de navegação ponta a ponta
-- [ ] Testar em mobile real (não só DevTools)
+- [ ] Revisêo visual page-a-page (light + dark) em browser real
+- [ ] Validar todos os links de navegaçêo ponta a ponta
+- [ ] Testar em mobile real (nêo só DevTools)
 - [ ] Conferir se todos os módulos têm ≥6 tópicos (regra do checklist)
 - [ ] Conferir se cada `Ver Completo` aponta para arquivo existente
-- [ ] Spell-check / revisão de copy
+- [ ] Spell-check / revisêo de copy
 - [ ] Adicionar AGENTS.md mestre comentado como bônus em `/bonus/`
 - [ ] Adicionar as 5 skills entregues como código-fonte em `/bonus/skills/`
 - [ ] Estudos de caso reais brasileiros (T1, T6)
@@ -97,7 +97,7 @@
 
 ---
 
-## Métricas finais de produção
+## Métricas finais de produçêo
 
 | Trilha | Cor | Páginas | Linhas |
 |---|---|---:|---:|
@@ -123,8 +123,8 @@
 - Link INEMA.CLUB em todas as páginas (`text-sky-400`)
 - Light mode CSS completo em cada página
 - Título do módulo `text-2xl font-bold` (ou maior no header)
-- Cada card de módulo no índice da trilha tem botão `Ver Completo`
+- Cada card de módulo no índice da trilha tem botêo `Ver Completo`
 - Theme toggle em todas as páginas
 - Breadcrumb nos módulos
-- Navegação encadeada: cada módulo aponta para o próximo
+- Navegaçêo encadeada: cada módulo aponta para o próximo
 - Variedade visual entre tópicos (SVG, tabelas, código, checklist, caixas)

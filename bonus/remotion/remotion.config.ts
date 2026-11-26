@@ -4,7 +4,7 @@ import { Config } from "@remotion/cli/config"
 Config.setVideoImageFormat("jpeg")
 Config.setCodec("h264")
 
-// Concorrência de render — usa metade dos cores disponíveis (não trava o sistema)
+// Concorrência de render — usa metade dos cores disponíveis (nêo trava o sistema)
 Config.setConcurrency(null) // null = automático
 
 // Pasta de saída

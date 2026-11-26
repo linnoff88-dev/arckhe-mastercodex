@@ -102,7 +102,7 @@
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
           <div class="text-3xl mb-3">🎬</div>
           <h4 class="font-bold text-amber-400 mb-2">CapCut / iMovie</h4>
-          <p class="text-sm text-neutral-400">Bom pra cortar, ruim pra animação. Sem programabilidade, sem reuso, sem agente que edita.</p>
+          <p class="text-sm text-neutral-400">Bom pra cortar, ruim pra animaçêo. Sem programabilidade, sem reuso, sem agente que edita.</p>
         </div>
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5 ring-2 ring-teal-500/30">
           <div class="text-3xl mb-3">⚛️</div>
@@ -140,7 +140,7 @@ npm run dev
 # abre http://localhost:3000
 
 # 4. Pede pro agente (com skill remotion ativa)
-codex "use a skill remotion: cria composição de 30s
+codex "use a skill remotion: cria composiçêo de 30s
 para o lançamento do InboxAI com 5 cenas:
 1) Hook (0-3s)
 2) Problema (3-9s)
@@ -158,8 +158,8 @@ npx remotion render src/Root.tsx LaunchVideo out/launch.mp4</code></pre>
         <pre class="bg-dark-900 rounded-lg p-4 overflow-x-auto text-xs text-neutral-300"><code>inboxai-launch/
 ├── src/
 │   ├── Root.tsx          ← registra todas as composições
-│   ├── LaunchVideo.tsx   ← composição principal (1920x1080)
-│   ├── LaunchVertical.tsx← versão 1080x1920
+│   ├── LaunchVideo.tsx   ← composiçêo principal (1920x1080)
+│   ├── LaunchVertical.tsx← versêo 1080x1920
 │   ├── scenes/
 │   │   ├── Hook.tsx
 │   │   ├── Problem.tsx
@@ -168,7 +168,7 @@ npx remotion render src/Root.tsx LaunchVideo out/launch.mp4</code></pre>
 │   │   └── CTA.tsx
 │   └── components/Logo.tsx, Caption.tsx, ...
 ├── public/
-│   └── screens/          ← prints do app vão aqui
+│   └── screens/          ← prints do app vêo aqui
 ├── out/                  ← .mp4 renderizados
 └── remotion.config.ts</code></pre>
       </div>
@@ -180,10 +180,10 @@ npx remotion render src/Root.tsx LaunchVideo out/launch.mp4</code></pre>
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">3</span>
         <h2 class="text-2xl font-bold">🎞️ Composições, Sequence, Animações</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Três conceitos centrais bastam pra entender 90% dos vídeos Remotion: <strong class="text-teal-400">Composition (cena raiz), Sequence (intervalo) e useCurrentFrame (animação por frame)</strong>.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Três conceitos centrais bastam pra entender 90% dos vídeos Remotion: <strong class="text-teal-400">Composition (cena raiz), Sequence (intervalo) e useCurrentFrame (animaçêo por frame)</strong>.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
-        <h3 class="text-base font-semibold text-teal-400 mb-3">⚛️ Composição com 3 sequences</h3>
+        <h3 class="text-base font-semibold text-teal-400 mb-3">⚛️ Composiçêo com 3 sequences</h3>
         <pre class="bg-dark-900 rounded-lg p-4 overflow-x-auto text-xs text-neutral-300"><code>// src/LaunchVideo.tsx
 import { Composition, Sequence, AbsoluteFill,
          useCurrentFrame, interpolate, spring,
@@ -205,7 +205,7 @@ export const LaunchVideo = () =&gt; {
   );
 };
 
-// Cena com animação por frame
+// Cena com animaçêo por frame
 const Hook = () =&gt; {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -227,7 +227,7 @@ const Hook = () =&gt; {
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6">
         <h3 class="text-base font-semibold text-teal-400 mb-4">🧠 Mental model dos 3 conceitos</h3>
         <div class="space-y-3">
-          <div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-teal-400">Composition:</strong><span class="text-sm text-neutral-300"> a "raiz" do vídeo. Define duração total, fps, dimensões. É o equivalente a um App.tsx pra vídeo.</span></div>
+          <div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-teal-400">Composition:</strong><span class="text-sm text-neutral-300"> a "raiz" do vídeo. Define duraçêo total, fps, dimensões. É o equivalente a um App.tsx pra vídeo.</span></div>
           <div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-teal-400">Sequence:</strong><span class="text-sm text-neutral-300"> agrupa o que aparece num intervalo (`from` + `durationInFrames`). Pensa como timeline track.</span></div>
           <div class="bg-dark-700/50 rounded-lg p-3"><strong class="text-teal-400">useCurrentFrame:</strong><span class="text-sm text-neutral-300"> retorna o frame atual sendo renderizado. Combine com `interpolate` ou `spring` pra animar qualquer prop.</span></div>
         </div>
@@ -285,7 +285,7 @@ const Hook = () =&gt; {
    - /inbox/triage       → public/screens/03-triage.png
    - /settings           → public/screens/04-settings.png
    - /reports            → public/screens/05-reports.png
-4. Versão mobile (390x844) das mesmas → public/screens/mobile/
+4. Versêo mobile (390x844) das mesmas → public/screens/mobile/
 
 # Depois, no Remotion:
 import dashboard from '/public/screens/01-dashboard.png';
@@ -356,9 +356,9 @@ npx remotion render src/Root.tsx LaunchHorizontal \
     <section id="topico-6" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">6</span>
-        <h2 class="text-2xl font-bold">📤 Publicando: Otimização por Plataforma</h2>
+        <h2 class="text-2xl font-bold">📤 Publicando: Otimizaçêo por Plataforma</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Vídeo bom mal publicado não roda. <strong class="text-teal-400">Cada plataforma tem regras tácitas que multiplicam alcance</strong> sem custo extra de produção.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Vídeo bom mal publicado nêo roda. <strong class="text-teal-400">Cada plataforma tem regras tácitas que multiplicam alcance</strong> sem custo extra de produçêo.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 overflow-hidden mb-6">
         <table class="w-full text-sm">
@@ -366,7 +366,7 @@ npx remotion render src/Root.tsx LaunchHorizontal \
             <tr>
               <th class="text-left p-3 text-neutral-400 font-semibold">Canal</th>
               <th class="text-center p-3 text-teal-400 font-semibold">Formato</th>
-              <th class="text-center p-3 text-teal-400 font-semibold">Duração ideal</th>
+              <th class="text-center p-3 text-teal-400 font-semibold">Duraçêo ideal</th>
               <th class="text-left p-3 text-teal-400 font-semibold">Hack</th>
             </tr>
           </thead>
@@ -384,19 +384,19 @@ npx remotion render src/Root.tsx LaunchHorizontal \
         <h3 class="text-base font-semibold text-teal-400 mb-3">🖼️ Thumbnail com Image Gen — prompt template</h3>
         <pre class="bg-dark-900 rounded-lg p-4 overflow-x-auto text-xs text-neutral-300"><code># Pra agente: image-gen
 "Thumbnail YouTube 1280x720 do app InboxAI.
-Composição: lado esquerdo print da inbox bagunçada
+Composiçêo: lado esquerdo print da inbox bagunçada
 em red overlay, lado direito mesmo print organizado
 em green overlay. Centro: seta amarela cruzando
 + texto 'AI faz' em fonte sans-serif bold branca.
 Estilo: clean, alto contraste, evitar cara do dev.
-Não usar texto pequeno demais."
+Nêo usar texto pequeno demais."
 
 # Salva como: out/thumb-yt.png</code></pre>
       </div>
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-3">📌 Hack final: legenda nativa</h3>
-        <p class="text-neutral-300">85% das pessoas assistem sem som. <strong>Burn legenda no vídeo</strong> direto da composição Remotion (componente Caption animado por frame). Não dependa de auto-caption das plataformas — elas erram seu nome de produto.</p>
+        <p class="text-neutral-300">85% das pessoas assistem sem som. <strong>Burn legenda no vídeo</strong> direto da composiçêo Remotion (componente Caption animado por frame). Nêo dependa de auto-caption das plataformas — elas erram seu nome de produto.</p>
       </div>
     </section>
 
@@ -408,13 +408,13 @@ Não usar texto pequeno demais."
           <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Remotion = React pra vídeo</strong><span class="text-neutral-400"> — programa em vez de clicar 200 vezes.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">A skill remotion do Codex faz scaffold</strong><span class="text-neutral-400"> — 5 comandos do zero ao primeiro .mp4.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Composition + Sequence + useCurrentFrame</strong><span class="text-neutral-400"> — o trio que cobre 90% dos vídeos.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Browser Use captura UI real</strong><span class="text-neutral-400"> — vídeo com app real vende, mock genérico não.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Mesmo código → 1080p e 9:16</strong><span class="text-neutral-400"> — uma composição por aspect ratio.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Otimização por plataforma multiplica alcance</strong><span class="text-neutral-400"> — duração, hook, thumb, legenda nativa.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Browser Use captura UI real</strong><span class="text-neutral-400"> — vídeo com app real vende, mock genérico nêo.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Mesmo código → 1080p e 9:16</strong><span class="text-neutral-400"> — uma composiçêo por aspect ratio.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Otimizaçêo por plataforma multiplica alcance</strong><span class="text-neutral-400"> — duraçêo, hook, thumb, legenda nativa.</span></div></div>
         </div>
         <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
           <h3 class="font-semibold text-teal-400 mb-2">Próximo Módulo:</h3>
-          <p class="text-neutral-300">5.4 — Agente de Marketing: landing page de alta conversão, copy nos frameworks certos e calendário de 30 dias gerado em uma noite.</p>
+          <p class="text-neutral-300">5.4 — Agente de Marketing: landing page de alta conversêo, copy nos frameworks certos e calendário de 30 dias gerado em uma noite.</p>
         </div>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="modulo-5-2.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Anterior: Browser + Computer Use</a>

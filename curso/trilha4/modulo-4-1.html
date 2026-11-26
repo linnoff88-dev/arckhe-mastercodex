@@ -92,7 +92,7 @@
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">1</span>
         <h2 class="text-2xl font-bold">🤔 Convex vs Supabase vs Postgres puro</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">A escolha do banco no dia zero define <strong class="text-amber-400">o quanto você vai sofrer nos próximos 6 meses</strong>. Não tem "melhor" — tem certo pro perfil. Pra o InboxAI da Trilha 4, vamos com Convex; mas você precisa saber comparar pra defender a escolha quando o cliente perguntar.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">A escolha do banco no dia zero define <strong class="text-amber-400">o quanto você vai sofrer nos próximos 6 meses</strong>. Nêo tem "melhor" — tem certo pro perfil. Pra o InboxAI da Trilha 4, vamos com Convex; mas você precisa saber comparar pra defender a escolha quando o cliente perguntar.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 overflow-hidden mb-6">
         <table class="w-full text-sm">
@@ -118,7 +118,7 @@
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-3">📌 Regra de bolso</h3>
-        <p class="text-neutral-300"><strong>Convex</strong> pra MVP em 1 fim de semana e produto reativo (chat ao vivo, dashboard). <strong>Supabase</strong> pra quando seu cliente é técnico e exige Postgres com RLS clássico. <strong>Postgres puro</strong> só quando você tem time DevOps ou previsão de escala extrema. Pro InboxAI, Convex destrava velocidade — e a Trilha 6 ensina migrar se um dia precisar.</p>
+        <p class="text-neutral-300"><strong>Convex</strong> pra MVP em 1 fim de semana e produto reativo (chat ao vivo, dashboard). <strong>Supabase</strong> pra quando seu cliente é técnico e exige Postgres com RLS clássico. <strong>Postgres puro</strong> só quando você tem time DevOps ou previsêo de escala extrema. Pro InboxAI, Convex destrava velocidade — e a Trilha 6 ensina migrar se um dia precisar.</p>
       </div>
     </section>
 
@@ -128,7 +128,7 @@
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">2</span>
         <h2 class="text-2xl font-bold">📋 Schema do InboxAI</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">O schema é a coluna do produto. Toda tabela aqui tem motivo operacional: <strong class="text-amber-400">cada campo justificado por uma decisão real</strong> da clínica, imobiliária ou agência que vai pagar.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">O schema é a coluna do produto. Toda tabela aqui tem motivo operacional: <strong class="text-amber-400">cada campo justificado por uma decisêo real</strong> da clínica, imobiliária ou agência que vai pagar.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-amber-400 mb-4">🗺️ Diagrama de Entidades</h3>
@@ -239,7 +239,7 @@ export default defineSchema({
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">3</span>
         <h2 class="text-2xl font-bold">🔗 Relacionamentos e Índices</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">90% dos travamentos em SaaS são <strong class="text-amber-400">query sem índice rodando full table scan</strong>. Aqui você vê quais colunas indexar no InboxAI e por que cada uma.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">90% dos travamentos em SaaS sêo <strong class="text-amber-400">query sem índice rodando full table scan</strong>. Aqui você vê quais colunas indexar no InboxAI e por que cada uma.</p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
         <div class="bg-dark-800 rounded-xl border border-dark-600 p-5">
@@ -265,7 +265,7 @@ export default defineSchema({
           </div>
           <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg">
             <span class="text-amber-400 font-mono text-xs flex-shrink-0">by_conversation</span>
-            <span class="text-neutral-300 text-sm">Listar mensagens da thread em ordem cronológica. Composto com sentAt evita ordenação custosa.</span>
+            <span class="text-neutral-300 text-sm">Listar mensagens da thread em ordem cronológica. Composto com sentAt evita ordenaçêo custosa.</span>
           </div>
           <div class="flex items-start space-x-3 p-3 bg-dark-700/50 rounded-lg">
             <span class="text-amber-400 font-mono text-xs flex-shrink-0">by_org_status</span>
@@ -280,7 +280,7 @@ export default defineSchema({
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-3">⚠️ Sintoma de índice faltando</h3>
-        <p class="text-neutral-300">Se uma tela demorar mais de 500ms com banco quase vazio, é índice. Se piora linearmente conforme entra dado, é índice errado. <strong>Adicione índice ao perceber, não em "otimização futura"</strong> — Convex faz hot-reload do schema sem downtime.</p>
+        <p class="text-neutral-300">Se uma tela demorar mais de 500ms com banco quase vazio, é índice. Se piora linearmente conforme entra dado, é índice errado. <strong>Adicione índice ao perceber, nêo em "otimizaçêo futura"</strong> — Convex faz hot-reload do schema sem downtime.</p>
       </div>
     </section>
 
@@ -290,7 +290,7 @@ export default defineSchema({
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">4</span>
         <h2 class="text-2xl font-bold">🚧 Migrations sem quebrar dado</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Cliente pagando R$ 2k/mês não aceita 10 minutos fora. <strong class="text-amber-400">Padrão expand-then-contract</strong> deixa a migração invisível: usuário nem percebe.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Cliente pagando R$ 2k/mês nêo aceita 10 minutos fora. <strong class="text-amber-400">Padrêo expand-then-contract</strong> deixa a migraçêo invisível: usuário nem percebe.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-amber-400 mb-4">🔄 Fluxo Expand-then-Contract</h3>
@@ -306,7 +306,7 @@ export default defineSchema({
             <span class="flex-shrink-0 w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 font-bold flex items-center justify-center">2</span>
             <div>
               <h4 class="font-semibold text-amber-400">BACKFILL — popula histórico</h4>
-              <p class="text-sm text-neutral-400">Mutation em batches que copia <code class="text-amber-400">stage</code> → <code class="text-amber-400">stageV2</code>. Roda em background, não bloqueia ninguém.</p>
+              <p class="text-sm text-neutral-400">Mutation em batches que copia <code class="text-amber-400">stage</code> → <code class="text-amber-400">stageV2</code>. Roda em background, nêo bloqueia ninguém.</p>
             </div>
           </div>
           <div class="flex items-start space-x-4">
@@ -347,13 +347,13 @@ export default defineSchema({
         </div>
 <pre class="text-xs text-neutral-300 bg-dark-900 rounded-lg p-4 overflow-x-auto">import { internalMutation } from "./_generated/server";
 
-const NOMES_BR = ["Ana Silva","João Santos","Maria Oliveira","Carlos Pereira",
+const NOMES_BR = ["Ana Silva","Joêo Santos","Maria Oliveira","Carlos Pereira",
                   "Beatriz Costa","Rafael Souza","Juliana Lima","Pedro Rocha"];
 const TAGS = ["lead-quente","cliente","follow-up","perdido","vip"];
 const FRASES = [
   "Oi, tenho interesse no plano Pro.",
   "Bom dia, qual o valor?",
-  "Você consegue passar a apresentação?",
+  "Você consegue passar a apresentaçêo?",
   "Vou falar com meu sócio e retorno.",
   "Fechado, manda o boleto."
 ];
@@ -421,7 +421,7 @@ npx convex run reset:wipe &amp;&amp; npx convex run seed:seed</pre>
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-3">⚠️ LGPD no seed</h3>
-        <p class="text-neutral-300">Não use número de telefone real, mesmo de "amigo seu". Use prefixo <code class="text-amber-400">5511 9</code> + dígitos aleatórios. Se cair em produção, ninguém recebe SMS. Mesma lógica pra email — sempre <code class="text-amber-400">demo+id@inbox.test</code>.</p>
+        <p class="text-neutral-300">Nêo use número de telefone real, mesmo de "amigo seu". Use prefixo <code class="text-amber-400">5511 9</code> + dígitos aleatórios. Se cair em produçêo, ninguém recebe SMS. Mesma lógica pra email — sempre <code class="text-amber-400">demo+id@inbox.test</code>.</p>
       </div>
     </section>
 
@@ -431,13 +431,13 @@ npx convex run reset:wipe &amp;&amp; npx convex run seed:seed</pre>
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xl">6</span>
         <h2 class="text-2xl font-bold">💾 Backups e ambiente prod</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Perder dado de cliente é fim de relacionamento e processo no horizonte. <strong class="text-amber-400">Backup só vale se você já testou restore</strong> — senão é placebo digital.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Perder dado de cliente é fim de relacionamento e processo no horizonte. <strong class="text-amber-400">Backup só vale se você já testou restore</strong> — senêo é placebo digital.</p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div class="bg-emerald-900/20 rounded-xl border border-emerald-500/30 p-6">
           <h4 class="font-bold text-emerald-400 mb-4">✓ Setup mínimo</h4>
           <ul class="space-y-2 text-sm text-neutral-300">
-            <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Convex Cloud: backup automático a cada 24h, retenção 30 dias</span></li>
+            <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Convex Cloud: backup automático a cada 24h, retençêo 30 dias</span></li>
             <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Snapshot manual antes de cada deploy crítico</span></li>
             <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Export semanal pra storage externo (S3 ou R2)</span></li>
             <li class="flex items-start space-x-2"><span class="text-emerald-400">✓</span><span>Drill de restore a cada 30 dias em ambiente staging</span></li>
@@ -470,7 +470,7 @@ npx convex run reset:wipe &amp;&amp; npx convex run seed:seed</pre>
 
       <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> RTO e RPO traduzidos</h3>
-        <p class="text-neutral-300 text-sm"><strong>RTO</strong> (Recovery Time Objective): em quanto tempo você volta ao ar — meta sã pra micro-SaaS BR é 4h. <strong>RPO</strong> (Recovery Point Objective): quanto dado pode perder no pior cenário — meta sã é 1h. Vender SLA mais agressivo sem infra adequada é cilada que cobra caro depois.</p>
+        <p class="text-neutral-300 text-sm"><strong>RTO</strong> (Recovery Time Objective): em quanto tempo você volta ao ar — meta sê pra micro-SaaS BR é 4h. <strong>RPO</strong> (Recovery Point Objective): quanto dado pode perder no pior cenário — meta sê é 1h. Vender SLA mais agressivo sem infra adequada é cilada que cobra caro depois.</p>
       </div>
     </section>
 
@@ -479,16 +479,16 @@ npx convex run reset:wipe &amp;&amp; npx convex run seed:seed</pre>
       <div class="bg-gradient-to-br from-amber-900/40 via-dark-800 to-dark-800 rounded-xl border border-amber-500/30 p-8">
         <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="mr-3">✅</span> O que Aprendemos</h2>
         <div class="space-y-4 mb-8">
-          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Convex pra MVP rápido, Supabase pra cliente técnico, Postgres puro só com DevOps</strong><span class="text-neutral-400"> — escolha por perfil, não por hype.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Schema do InboxAI com 6 tabelas core e orgId em todas</strong><span class="text-neutral-400"> — multi-tenant é decisão do dia zero, não retrofit.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Convex pra MVP rápido, Supabase pra cliente técnico, Postgres puro só com DevOps</strong><span class="text-neutral-400"> — escolha por perfil, nêo por hype.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Schema do InboxAI com 6 tabelas core e orgId em todas</strong><span class="text-neutral-400"> — multi-tenant é decisêo do dia zero, nêo retrofit.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Índices em campos de busca evitam full scan</strong><span class="text-neutral-400"> — 500ms é sintoma; resolva ao perceber.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Expand-then-contract = migration invisível</strong><span class="text-neutral-400"> — cliente pagante não aceita downtime de 10 min.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Expand-then-contract = migration invisível</strong><span class="text-neutral-400"> — cliente pagante nêo aceita downtime de 10 min.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Seed realista vende demo</strong><span class="text-neutral-400"> — 50 contatos com nome BR e mensagens em PT, sem dado real.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-amber-400 mt-1">✓</span><div><strong class="text-white">Backup só conta se restore foi testado</strong><span class="text-neutral-400"> — drill mensal e snapshot pré-deploy crítico.</span></div></div>
         </div>
         <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
           <h3 class="font-semibold text-amber-400 mb-2">Próximo Módulo:</h3>
-          <p class="text-neutral-300">4.2 — Integrando Evolution API: Docker, QR code, webhook recebendo mensagem real do WhatsApp e função de envio com texto, áudio e imagem.</p>
+          <p class="text-neutral-300">4.2 — Integrando Evolution API: Docker, QR code, webhook recebendo mensagem real do WhatsApp e funçêo de envio com texto, áudio e imagem.</p>
         </div>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Voltar para Trilha 4</a>

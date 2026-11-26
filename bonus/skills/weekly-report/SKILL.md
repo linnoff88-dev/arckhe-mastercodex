@@ -1,7 +1,7 @@
 ---
 name: weekly-report
 description: Gera relatório semanal pra cliente em 2 formatos (slides + email). Coleta métricas, atividades feitas, próximos passos e bloqueios. Use quando o usuário disser "relatório da semana", "report pro cliente", "fechamento semanal".
-when_to_use: Sexta-feira de manhã (ou qualquer dia que o usuário fizer fechamento da semana); cliente cobrou status; usuário precisa atualizar stakeholder; final de sprint.
+when_to_use: Sexta-feira de manhê (ou qualquer dia que o usuário fizer fechamento da semana); cliente cobrou status; usuário precisa atualizar stakeholder; final de sprint.
 ---
 
 # Skill: Weekly Report
@@ -10,11 +10,11 @@ when_to_use: Sexta-feira de manhã (ou qualquer dia que o usuário fizer fechame
 
 - "Gera o report da semana pro cliente X"
 - "Fechamento semanal"
-- "Relatório de status pra mandar amanhã"
+- "Relatório de status pra mandar amanhê"
 - "Update pro stakeholder"
 - "Resumo do que fizemos essa semana"
 
-**NÃO usar quando:** o usuário quer relatório mensal/trimestral — esses têm estrutura diferente (executiva, com ROI). Esta é semanal, mais operacional.
+**NêO usar quando:** o usuário quer relatório mensal/trimestral — esses têm estrutura diferente (executiva, com ROI). Esta é semanal, mais operacional.
 
 ## Como funciona — passo a passo
 
@@ -30,8 +30,8 @@ Pergunta (ou puxa automaticamente se tiver acesso):
 5 blocos fixos (ordem importa):
 1. **TL;DR** (3 frases — o cliente lê só isso se for ocupado)
 2. **Métricas da semana** (tabela: métrica | valor | delta vs sem.passada)
-3. **O que entregamos** (lista bullet, foco em outcome, não output)
-4. **O que não saiu / bloqueios** (transparência — esconder pioras a confiança)
+3. **O que entregamos** (lista bullet, foco em outcome, nêo output)
+4. **O que nêo saiu / bloqueios** (transparência — esconder pioras a confiança)
 5. **Próximos 7 dias** (3-5 prioridades)
 
 ### Passo 3: Gerar 2 formatos
@@ -48,18 +48,18 @@ Pergunta (ou puxa automaticamente se tiver acesso):
 - TL;DR em **negrito** no topo
 - Métricas em tabela markdown
 - Sem anexos pesados — link pros slides se quiser detalhe
-- Assinatura padrão do remetente
+- Assinatura padrêo do remetente
 
 ### Passo 4: Validar
 Antes de mandar, mostra os 2 formatos pro usuário e pergunta:
 - Algo errado nos números?
-- Algo sensível que não posso mencionar?
+- Algo sensível que nêo posso mencionar?
 - Tom OK? (mais formal, mais informal?)
 
 ### Passo 5: Entregar
 - Salva slides em `reports/<cliente>/<YYYY-MM-DD>.pdf` ou link
 - Salva email em `reports/<cliente>/<YYYY-MM-DD>.md`
-- Opcional: agenda envio (se tiver integração Gmail) ou copia pro clipboard
+- Opcional: agenda envio (se tiver integraçêo Gmail) ou copia pro clipboard
 
 ## Inputs esperados
 
@@ -105,7 +105,7 @@ Oi {{primeiro_nome}},
 - {{entrega_2}}
 - {{entrega_3}}
 
-### ⚠️ Não saiu / Bloqueios
+### ⚠️ Nêo saiu / Bloqueios
 
 - {{bloqueio_1}} — *próximo passo: {{acao}}*
 
@@ -141,12 +141,12 @@ Slide 3 — Métricas
 
 Slide 4 — Entregas + Bloqueios
   Coluna esquerda: ✅ entregamos (5 itens)
-  Coluna direita: ⚠️ bloqueios (1-3 itens com ação)
+  Coluna direita: ⚠️ bloqueios (1-3 itens com açêo)
 
 Slide 5 — Próximos 7 dias
   3-5 prioridades
   Datas-chave
-  CTA: reunião agendada / decisão pendente
+  CTA: reuniêo agendada / decisêo pendente
 ```
 
 ### Script Python pra gerar slides via API Google
@@ -192,16 +192,16 @@ def create_weekly_slides(creds: Credentials, data: dict) -> str:
 - Próximos passos focados em onboarding novos signups
 
 ### Exemplo 2: Cliente sem métricas digitais
-**Input:** "Report pro cliente Beta (escritório de advocacia). Não tem métricas web. Foco: casos atendidos, prazos cumpridos."
+**Input:** "Report pro cliente Beta (escritório de advocacia). Nêo tem métricas web. Foco: casos atendidos, prazos cumpridos."
 
 **Output:**
 - Métricas adaptadas: casos abertos, casos fechados, prazos no vermelho
 - Tom mais formal (tradicional)
-- Slides em PDF (não Google Slides — cliente não usa)
+- Slides em PDF (nêo Google Slides — cliente nêo usa)
 
 ## Aprendizados
 
 - Cliente lê 90% só o TL;DR. Capriche nele, custe o que custar.
 - Sextas 14h é horário ótimo de envio (pré-fim-de-semana, calmo).
 - Mandar todo dia ou toda quinta? Use mesmo dia/hora sempre. Previsibilidade > timing perfeito.
-- Quando há bloqueio, sempre proponha próximo passo. Cliente não quer só problema, quer plano.
+- Quando há bloqueio, sempre proponha próximo passo. Cliente nêo quer só problema, quer plano.

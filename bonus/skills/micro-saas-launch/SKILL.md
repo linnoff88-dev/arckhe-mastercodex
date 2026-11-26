@@ -1,7 +1,7 @@
 ---
 name: micro-saas-launch
 description: Orquestra o lançamento completo de um micro-SaaS em 30 dias. Faz pesquisa de nicho, copy, landing, vídeo Remotion, calendário de posts e plano de tráfego. Use quando o usuário disser "vou lançar um SaaS", "ajuda no lançamento", "preciso de copy + landing + posts".
-when_to_use: Usuário tem ideia de SaaS e quer plano completo; quer lançar produto que já existe e precisa go-to-market; precisa de calendário de conteúdo de 30 dias; quer pacote integrado (não pedacinho).
+when_to_use: Usuário tem ideia de SaaS e quer plano completo; quer lançar produto que já existe e precisa go-to-market; precisa de calendário de conteúdo de 30 dias; quer pacote integrado (nêo pedacinho).
 ---
 
 # Skill: Micro-SaaS Launch
@@ -13,7 +13,7 @@ when_to_use: Usuário tem ideia de SaaS e quer plano completo; quer lançar prod
 - "Plano de lançamento de 30 dias pro [produto]"
 - "Como faço o go-to-market de um SaaS pra [nicho]?"
 
-**NÃO usar quando:** o usuário só quer 1 entregável (ex: só a landing, só os posts) — usa skill mais específica. Esta é a orquestradora.
+**NêO usar quando:** o usuário só quer 1 entregável (ex: só a landing, só os posts) — usa skill mais específica. Esta é a orquestradora.
 
 ## Como funciona — passo a passo
 
@@ -101,9 +101,9 @@ launch-<slug>/
 | O que faz (1 frase) | Sim |
 | Persona | Sim |
 | Estágio do MVP | Sim |
-| Audiência atual | Não |
+| Audiência atual | Nêo |
 | Pricing | Sim |
-| Budget de ads | Não |
+| Budget de ads | Nêo |
 | Data de lançamento | Sim |
 
 ## Outputs
@@ -121,22 +121,22 @@ launch-<slug>/
 ```markdown
 ## Headlines
 
-**Versão 1 — racional:**
+**Versêo 1 — racional:**
 [X] que [benefício mensurável] pra [persona]
 
-**Versão 2 — emocional:**
+**Versêo 2 — emocional:**
 Pare de [dor] hoje. [X] resolve em [tempo].
 
-**Versão 3 — curiosidade:**
+**Versêo 3 — curiosidade:**
 A forma como [persona] está [verbo] [objeto] está mudando. [X] é o motivo.
 
 ## 3 Objeções e Respostas
 
-| Objeção | Resposta |
+| Objeçêo | Resposta |
 |---------|----------|
-| "É caro" | Calcule o custo de NÃO ter: R$ X/mês em [perda]. |
-| "Já uso [concorrente]" | [X] resolve [feature que concorrente não tem]. Migração em 5min. |
-| "Não tenho tempo pra implementar" | Setup em 10 minutos com nosso onboarding guiado. |
+| "É caro" | Calcule o custo de NêO ter: R$ X/mês em [perda]. |
+| "Já uso [concorrente]" | [X] resolve [feature que concorrente nêo tem]. Migraçêo em 5min. |
+| "Nêo tenho tempo pra implementar" | Setup em 10 minutos com nosso onboarding guiado. |
 ```
 
 ### Calendário CSV (template)
@@ -149,7 +149,7 @@ day,platform,type,hook,body_short,cta,asset
 0,twitter,launch,"X está no ar","Você pode testar grátis por 14 dias em [link]",click,thumb-launch.png
 0,linkedin,launch,"Lançamos hoje","Depois de 6 meses construindo X, hoje libera",react,linkedin-cover.png
 1,twitter,tutorial,"Como usar X em 5min","Thread: 1/ Faça login...",bookmark,gif-tutorial.gif
-3,linkedin,case,"Primeiro cliente em produção","Cliente Y reportou: A, B, C",comment,
+3,linkedin,case,"Primeiro cliente em produçêo","Cliente Y reportou: A, B, C",comment,
 7,twitter,bts,"O que aprendi nessa primeira semana","Thread: 1/ ...",follow,
 ```
 
@@ -167,6 +167,6 @@ day,platform,type,hook,body_short,cta,asset
 
 ## Aprendizados
 
-- Briefing curto resolve 80%. Não peça 30 perguntas — pede 8 e itera.
-- Calendário sempre tem buffer (3-4 posts por semana, não 7) — sustentável.
+- Briefing curto resolve 80%. Nêo peça 30 perguntas — pede 8 e itera.
+- Calendário sempre tem buffer (3-4 posts por semana, nêo 7) — sustentável.
 - Vídeo de 30s converte mais que 90s na fase de lançamento.

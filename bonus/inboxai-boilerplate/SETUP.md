@@ -4,7 +4,7 @@ Setup do zero. Da máquina recém-formatada à primeira conversa rodando localme
 
 ## Pré-requisitos
 
-| Ferramenta | Versão | Como instalar |
+| Ferramenta | Versêo | Como instalar |
 |-----------|--------|---------------|
 | Node.js | 20+ | `nvm install 20 && nvm use 20` |
 | Docker | recente | https://docs.docker.com/get-docker/ |
@@ -61,7 +61,7 @@ Deixe esse terminal aberto — ele fica sincronizando seu código pra cloud do C
 ## Passo 4: Criar conta Clerk
 
 1. Acesse https://clerk.com → "Sign up".
-2. Cria aplicação → escolhe "Email + Google" como métodos.
+2. Cria aplicaçêo → escolhe "Email + Google" como métodos.
 3. Em **Configure → Sessions** habilita "Organizations".
 4. Em **API Keys** copia:
    - `Publishable key` (começa com `pk_test_`)
@@ -127,7 +127,7 @@ docker compose -f docker-compose.dev.yml up -d
 Verifica:
 ```bash
 curl http://localhost:8080
-# deve retornar JSON com versão
+# deve retornar JSON com versêo
 ```
 
 Adiciona em `.env.local`:
@@ -142,7 +142,7 @@ npx convex env set EVOLUTION_API_URL http://localhost:8080
 npx convex env set EVOLUTION_API_KEY dev-api-key-mude-em-prod
 ```
 
-**Importante sobre webhook em dev:** localhost não é acessível pela cloud do Convex pra receber webhook reverso. Use ngrok ou cloudflared:
+**Importante sobre webhook em dev:** localhost nêo é acessível pela cloud do Convex pra receber webhook reverso. Use ngrok ou cloudflared:
 
 ```bash
 # instala ngrok
@@ -153,7 +153,7 @@ ngrok http 8080
 # pega URL https://abc123.ngrok-free.app
 ```
 
-Configura webhook do Convex pra apontar pra essa URL via dashboard Convex (Functions → HTTP). Em produção isso não é problema (tudo é pública).
+Configura webhook do Convex pra apontar pra essa URL via dashboard Convex (Functions → HTTP). Em produçêo isso nêo é problema (tudo é pública).
 
 ## Passo 6: Configurar Anthropic
 
@@ -198,7 +198,7 @@ Abre http://localhost:3000.
 ## Passo 9: Smoke test
 
 1. **Sign-up** com email no Clerk → cai em `/onboarding`.
-2. **Cria organização** "Teste Cliente X".
+2. **Cria organizaçêo** "Teste Cliente X".
 3. **Vai em `/settings/whatsapp`** → click "Conectar instância".
 4. **Aparece QR code** (vem do Evolution local).
 5. **Escaneia com WhatsApp** do seu celular pessoal.
@@ -206,21 +206,21 @@ Abre http://localhost:3000.
 7. **Confere:**
    - Mensagem aparece em `/inbox` em ~2s.
    - Agente IA gera resposta em ~3s.
-   - Contato aparece em `/contacts` com classificação.
-   - Deal entra no pipeline em `/deals` se classificação = hot.
+   - Contato aparece em `/contacts` com classificaçêo.
+   - Deal entra no pipeline em `/deals` se classificaçêo = hot.
 
-Se tudo isso funcionar: **setup OK**. Próximo passo é customização (logo, copy, prompts do agente).
+Se tudo isso funcionar: **setup OK**. Próximo passo é customizaçêo (logo, copy, prompts do agente).
 
 ## Troubleshooting
 
 ### "Convex schema mismatch"
-Rodou `npx convex dev` e mudou schema. Solução:
+Rodou `npx convex dev` e mudou schema. Soluçêo:
 ```bash
 # limpa e recria
 npx convex dev --once
 ```
 
-### Evolution não recebe webhook do WhatsApp
+### Evolution nêo recebe webhook do WhatsApp
 - Confere se docker tá up: `docker ps`
 - Confere logs: `docker logs evolution-dev`
 - Confere se ngrok tá apontando certo
@@ -232,17 +232,17 @@ Chave errada ou expirada. Re-set:
 npx convex env set ANTHROPIC_API_KEY <nova>
 ```
 
-### Clerk webhook não dispara
+### Clerk webhook nêo dispara
 - Verifica em **Webhooks → Logs** no Clerk se a chamada saiu.
 - Se sim, verifica logs Convex: `npx convex logs`.
 - Causa comum: `CLERK_WEBHOOK_SECRET` errado.
 
-### Mensagem outbound não chega no WhatsApp
+### Mensagem outbound nêo chega no WhatsApp
 - Confere logs Evolution: `docker logs evolution-dev -f`
 - Confere se número destino está no formato E.164 (`5511999998888`).
 - Confere se instância está com status "open" no Evolution.
 
-### "Origin not allowed" em produção
+### "Origin not allowed" em produçêo
 Adiciona domínio do front nas allowed origins do Clerk + variável `NEXT_PUBLIC_APP_URL`.
 
 ## Próximos passos

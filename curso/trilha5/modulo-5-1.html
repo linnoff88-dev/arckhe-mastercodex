@@ -124,7 +124,7 @@
         <h3 class="text-lg font-semibold text-red-400 mb-3">⚠️ Os 4 sintomas que indicam que você caiu na armadilha</h3>
         <ul class="space-y-2 text-sm text-neutral-300">
           <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span><strong>Conflitos de merge</strong> em arquivos óbvios (package.json, AGENTS.md, lockfiles)</span></li>
-          <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span><strong>Trabalho some</strong>: você jura que viu o agente B criar um componente, mas ele não está mais no repo</span></li>
+          <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span><strong>Trabalho some</strong>: você jura que viu o agente B criar um componente, mas ele nêo está mais no repo</span></li>
           <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span><strong>Estado inconsistente</strong>: front chama API que back já removeu (ou vice-versa)</span></li>
           <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span><strong>Você passa mais tempo arbitrando</strong> entre agentes do que revisando código</span></li>
         </ul>
@@ -159,7 +159,7 @@ git worktree list
 # /home/voce/projects/inboxai-backend    ghi789 [feature/backend]
 # ...
 
-# Em cada terminal/sessão Codex, abre uma pasta diferente
+# Em cada terminal/sessêo Codex, abre uma pasta diferente
 cd ~/projects/inboxai-frontend &amp;&amp; codex
 cd ~/projects/inboxai-backend  &amp;&amp; codex
 # ...zero conflito de filesystem</code></pre>
@@ -170,7 +170,7 @@ cd ~/projects/inboxai-backend  &amp;&amp; codex
           <h4 class="font-bold text-teal-400 mb-3">✓ Ganhos imediatos</h4>
           <ul class="space-y-2 text-sm text-neutral-300">
             <li>• Cada agente vê só seu node_modules</li>
-            <li>• Builds paralelos não brigam por porta</li>
+            <li>• Builds paralelos nêo brigam por porta</li>
             <li>• Branches já isoladas → PR limpa</li>
             <li>• Você abre 6 VS Code, cada um numa pasta</li>
           </ul>
@@ -181,7 +181,7 @@ cd ~/projects/inboxai-backend  &amp;&amp; codex
             <li>• Disco: 6 worktrees = 6× node_modules</li>
             <li>• .env precisa estar em cada worktree</li>
             <li>• git worktree remove no fim do projeto</li>
-            <li>• Não dê push direto na main</li>
+            <li>• Nêo dê push direto na main</li>
           </ul>
         </div>
       </div>
@@ -193,7 +193,7 @@ cd ~/projects/inboxai-backend  &amp;&amp; codex
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">3</span>
         <h2 class="text-2xl font-bold">🎭 Os 6 Papéis Canônicos da Equipe-Fantasma</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Cada agente recebe um <strong class="text-teal-400">AGENTS.md próprio definindo escopo, fronteiras e o que NÃO deve tocar</strong>. Especialização é mais valiosa que generalismo no multiagente — agentes generalistas brigam por território.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Cada agente recebe um <strong class="text-teal-400">AGENTS.md próprio definindo escopo, fronteiras e o que NêO deve tocar</strong>. Especializaçêo é mais valiosa que generalismo no multiagente — agentes generalistas brigam por território.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 overflow-hidden mb-6">
         <table class="w-full text-sm">
@@ -201,23 +201,23 @@ cd ~/projects/inboxai-backend  &amp;&amp; codex
             <tr>
               <th class="text-left p-3 text-neutral-400 font-semibold">Papel</th>
               <th class="text-left p-3 text-teal-400 font-semibold">Faz</th>
-              <th class="text-left p-3 text-red-400 font-semibold">Não faz</th>
+              <th class="text-left p-3 text-red-400 font-semibold">Nêo faz</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-dark-600">
-            <tr><td class="p-3 text-neutral-300"><strong>🏛️ Arquiteto</strong></td><td class="p-3 text-neutral-300">Define schema, contratos de API, decisões estruturais</td><td class="p-3 text-neutral-400">Não escreve UI, não escreve queries</td></tr>
-            <tr><td class="p-3 text-neutral-300"><strong>🎨 Frontend</strong></td><td class="p-3 text-neutral-300">Componentes, páginas, estado de UI, Tailwind</td><td class="p-3 text-neutral-400">Não toca em /api ou no schema</td></tr>
-            <tr><td class="p-3 text-neutral-300"><strong>⚙️ Backend</strong></td><td class="p-3 text-neutral-300">Routes, queries, jobs, integrações externas</td><td class="p-3 text-neutral-400">Não mexe em /components</td></tr>
-            <tr><td class="p-3 text-neutral-300"><strong>🧪 QA</strong></td><td class="p-3 text-neutral-300">Testes E2E, testes unitários, fixtures</td><td class="p-3 text-neutral-400">Não corrige bugs — abre issue</td></tr>
-            <tr><td class="p-3 text-neutral-300"><strong>📣 Marketing</strong></td><td class="p-3 text-neutral-300">Landing /marketing, copy, posts, assets</td><td class="p-3 text-neutral-400">Não toca no app real</td></tr>
-            <tr><td class="p-3 text-neutral-300"><strong>🔬 Pesquisa</strong></td><td class="p-3 text-neutral-300">Concorrentes, benchmark, docs/research</td><td class="p-3 text-neutral-400">Não escreve código de produção</td></tr>
+            <tr><td class="p-3 text-neutral-300"><strong>🏛️ Arquiteto</strong></td><td class="p-3 text-neutral-300">Define schema, contratos de API, decisões estruturais</td><td class="p-3 text-neutral-400">Nêo escreve UI, nêo escreve queries</td></tr>
+            <tr><td class="p-3 text-neutral-300"><strong>🎨 Frontend</strong></td><td class="p-3 text-neutral-300">Componentes, páginas, estado de UI, Tailwind</td><td class="p-3 text-neutral-400">Nêo toca em /api ou no schema</td></tr>
+            <tr><td class="p-3 text-neutral-300"><strong>⚙️ Backend</strong></td><td class="p-3 text-neutral-300">Routes, queries, jobs, integrações externas</td><td class="p-3 text-neutral-400">Nêo mexe em /components</td></tr>
+            <tr><td class="p-3 text-neutral-300"><strong>🧪 QA</strong></td><td class="p-3 text-neutral-300">Testes E2E, testes unitários, fixtures</td><td class="p-3 text-neutral-400">Nêo corrige bugs — abre issue</td></tr>
+            <tr><td class="p-3 text-neutral-300"><strong>📣 Marketing</strong></td><td class="p-3 text-neutral-300">Landing /marketing, copy, posts, assets</td><td class="p-3 text-neutral-400">Nêo toca no app real</td></tr>
+            <tr><td class="p-3 text-neutral-300"><strong>🔬 Pesquisa</strong></td><td class="p-3 text-neutral-300">Concorrentes, benchmark, docs/research</td><td class="p-3 text-neutral-400">Nêo escreve código de produçêo</td></tr>
           </tbody>
         </table>
       </div>
 
       <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> A regra de ouro</h3>
-        <p class="text-neutral-300">No AGENTS.md de cada papel, escreva uma seção <strong>"Anti-objetivos"</strong> com o que aquele agente NÃO faz. É mais importante do que listar o que faz — porque é onde o caos começa quando dois agentes acham que a mesma coisa é deles.</p>
+        <p class="text-neutral-300">No AGENTS.md de cada papel, escreva uma seçêo <strong>"Anti-objetivos"</strong> com o que aquele agente NêO faz. É mais importante do que listar o que faz — porque é onde o caos começa quando dois agentes acham que a mesma coisa é deles.</p>
       </div>
     </section>
 
@@ -227,7 +227,7 @@ cd ~/projects/inboxai-backend  &amp;&amp; codex
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">4</span>
         <h2 class="text-2xl font-bold">🎬 Você como Agente Coordenador</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Seu papel real não é programar — é <strong class="text-teal-400">definir interfaces, mediar conflitos e decidir prioridades</strong>. Quem fica programando junto com os agentes vira gargalo. Quem só coordena destrava 4–8x output.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Seu papel real nêo é programar — é <strong class="text-teal-400">definir interfaces, mediar conflitos e decidir prioridades</strong>. Quem fica programando junto com os agentes vira gargalo. Quem só coordena destrava 4–8x output.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-teal-400 mb-4">🎯 As 4 atividades do coordenador</h3>
@@ -238,7 +238,7 @@ cd ~/projects/inboxai-backend  &amp;&amp; codex
           </div>
           <div class="bg-dark-700/50 rounded-lg p-4">
             <div class="text-teal-400 font-bold text-sm mb-2">2. PRIORIZAR FILA</div>
-            <p class="text-sm text-neutral-300">Backend deve fazer X antes de Y porque frontend depende. Você é quem mantém ordem de execução clara.</p>
+            <p class="text-sm text-neutral-300">Backend deve fazer X antes de Y porque frontend depende. Você é quem mantém ordem de execuçêo clara.</p>
           </div>
           <div class="bg-dark-700/50 rounded-lg p-4">
             <div class="text-teal-400 font-bold text-sm mb-2">3. MEDIAR CONFLITOS</div>
@@ -253,7 +253,7 @@ cd ~/projects/inboxai-backend  &amp;&amp; codex
 
       <div class="bg-blue-900/20 rounded-xl border border-blue-500/30 p-6">
         <h3 class="text-lg font-semibold text-blue-400 mb-3">📌 Sinal claro de que você está coordenando bem</h3>
-        <p class="text-neutral-300">Você passa 70% do tempo lendo PRs e ajustando AGENTS.md, 20% definindo próximas tarefas, e <strong>menos de 10% escrevendo código direto</strong>. Se você está digitando código todo dia, ainda é programador, não coordenador.</p>
+        <p class="text-neutral-300">Você passa 70% do tempo lendo PRs e ajustando AGENTS.md, 20% definindo próximas tarefas, e <strong>menos de 10% escrevendo código direto</strong>. Se você está digitando código todo dia, ainda é programador, nêo coordenador.</p>
       </div>
     </section>
 
@@ -261,9 +261,9 @@ cd ~/projects/inboxai-backend  &amp;&amp; codex
     <section id="topico-5" class="mb-16">
       <div class="flex items-center space-x-4 mb-6">
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">5</span>
-        <h2 class="text-2xl font-bold">📨 Comunicação Assíncrona via PRs</h2>
+        <h2 class="text-2xl font-bold">📨 Comunicaçêo Assíncrona via PRs</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">PRs viram a interface oficial de comunicação. <strong class="text-teal-400">Cada agente abre PR quando termina; você revisa, comenta, faz merge</strong>. Sem chat ao vivo, sem reuniões, sem perda de rastro.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">PRs viram a interface oficial de comunicaçêo. <strong class="text-teal-400">Cada agente abre PR quando termina; você revisa, comenta, faz merge</strong>. Sem chat ao vivo, sem reuniões, sem perda de rastro.</p>
 
       <div class="bg-dark-800 rounded-xl border border-dark-600 p-6 mb-6">
         <h3 class="text-base font-semibold text-teal-400 mb-4">🔄 Fluxo de PR multiagente</h3>
@@ -292,7 +292,7 @@ cd ~/projects/inboxai-backend  &amp;&amp; codex
 
           <rect x="200" y="160" width="120" height="40" rx="6" fill="#10b981" stroke="#10b981"/>
           <text x="260" y="178" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold">MERGE → main</text>
-          <text x="260" y="192" text-anchor="middle" fill="#dcfce7" font-size="8">após aprovação</text>
+          <text x="260" y="192" text-anchor="middle" fill="#dcfce7" font-size="8">após aprovaçêo</text>
           <path d="M 260 60 L 260 160" stroke="#10b981" stroke-width="2" stroke-dasharray="4,2"/>
 
           <defs><marker id="arrow1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L7,4 L0,8" fill="#14b8a6"/></marker></defs>
@@ -307,7 +307,7 @@ cd ~/projects/inboxai-backend  &amp;&amp; codex
 ## Escopo
 - [x] Componente X criado
 - [x] Testes para X
-- [ ] Integração com /api/x (depende de PR #42 do back)
+- [ ] Integraçêo com /api/x (depende de PR #42 do back)
 
 ## Test plan
 - [ ] npm run dev → abrir /dashboard → checar X
@@ -315,7 +315,7 @@ cd ~/projects/inboxai-backend  &amp;&amp; codex
 
 ## Notas pro diretor
 Bloqueado por: PR #42 (backend)
-Decisão pendente: tom da mensagem de erro
+Decisêo pendente: tom da mensagem de erro
 
 🤖 Agente: frontend</code></pre>
       </div>
@@ -327,17 +327,17 @@ Decisão pendente: tom da mensagem de erro
         <span class="flex items-center justify-center w-12 h-12 rounded-full bg-teal-500/20 text-teal-400 font-bold text-xl">6</span>
         <h2 class="text-2xl font-bold">⚠️ Quando ABANDONAR Multiagente</h2>
       </div>
-      <p class="text-neutral-300 mb-6 leading-relaxed">Multiagente tem custo de coordenação fixo. Se a tarefa é pequena, <strong class="text-teal-400">o overhead vence o ganho de paralelismo</strong> e você gasta mais tempo dando briefing do que ganharia. Reconhecer isso é maturidade.</p>
+      <p class="text-neutral-300 mb-6 leading-relaxed">Multiagente tem custo de coordenaçêo fixo. Se a tarefa é pequena, <strong class="text-teal-400">o overhead vence o ganho de paralelismo</strong> e você gasta mais tempo dando briefing do que ganharia. Reconhecer isso é maturidade.</p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
         <div class="bg-red-900/20 rounded-xl border border-red-500/30 p-6">
-          <h4 class="font-bold text-red-400 mb-4">❌ Não use multiagente quando</h4>
+          <h4 class="font-bold text-red-400 mb-4">❌ Nêo use multiagente quando</h4>
           <ul class="space-y-2 text-sm text-neutral-300">
             <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span>Tarefa total cabe em &lt; 30 minutos</span></li>
             <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span>Bug isolado em 1 ou 2 arquivos</span></li>
             <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span>Refactor que toca tudo no mesmo módulo</span></li>
-            <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span>Você não sabe ainda como o produto deve funcionar</span></li>
-            <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span>POC/exploração — vibe coding com 1 agente é melhor</span></li>
+            <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span>Você nêo sabe ainda como o produto deve funcionar</span></li>
+            <li class="flex items-start space-x-2"><span class="text-red-400">•</span><span>POC/exploraçêo — vibe coding com 1 agente é melhor</span></li>
           </ul>
         </div>
         <div class="bg-teal-900/20 rounded-xl border border-teal-500/30 p-6">
@@ -345,7 +345,7 @@ Decisão pendente: tom da mensagem de erro
           <ul class="space-y-2 text-sm text-neutral-300">
             <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Lançamento com 4+ frentes (front, back, mkt, vídeo)</span></li>
             <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Sprint de 2+ dias com escopo claro</span></li>
-            <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Especificação madura, contratos definidos</span></li>
+            <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Especificaçêo madura, contratos definidos</span></li>
             <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Deadline apertado (uma noite, um fim de semana)</span></li>
             <li class="flex items-start space-x-2"><span class="text-teal-400">✓</span><span>Você quer ir dormir e acordar com PRs prontas</span></li>
           </ul>
@@ -354,7 +354,7 @@ Decisão pendente: tom da mensagem de erro
 
       <div class="bg-primary/10 rounded-xl border border-primary/40 p-6">
         <h3 class="text-lg font-semibold text-primary mb-3 flex items-center"><span class="mr-2">💡</span> A heurística da regra-de-bolso</h3>
-        <p class="text-neutral-300">Se você consegue escrever AGENTS.md de cada agente em &lt; 10 minutos cada, multiagente vale. Se você ainda está descobrindo o produto enquanto coda, fica com 1 agente focado. <strong>Multiagente é amplificador, não acelerador inicial</strong>.</p>
+        <p class="text-neutral-300">Se você consegue escrever AGENTS.md de cada agente em &lt; 10 minutos cada, multiagente vale. Se você ainda está descobrindo o produto enquanto coda, fica com 1 agente focado. <strong>Multiagente é amplificador, nêo acelerador inicial</strong>.</p>
       </div>
     </section>
 
@@ -367,12 +367,12 @@ Decisão pendente: tom da mensagem de erro
           <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">git worktree é a primitiva</strong><span class="text-neutral-400"> — cada agente em sua pasta, sua branch, sem pisar em ninguém.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">6 papéis canônicos</strong><span class="text-neutral-400"> — Arquiteto, Front, Back, QA, Marketing, Pesquisa, com anti-objetivos claros.</span></div></div>
           <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Você é coordenador</strong><span class="text-neutral-400"> — define interfaces, prioriza, media conflitos, revisa PRs.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">PRs são o canal assíncrono</strong><span class="text-neutral-400"> — toda comunicação fica rastreada, sem chat caótico.</span></div></div>
-          <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Saber NÃO usar multiagente é maturidade</strong><span class="text-neutral-400"> — abaixo de 30 min ou em POC, 1 agente vence.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">PRs sêo o canal assíncrono</strong><span class="text-neutral-400"> — toda comunicaçêo fica rastreada, sem chat caótico.</span></div></div>
+          <div class="flex items-start space-x-3"><span class="text-teal-400 mt-1">✓</span><div><strong class="text-white">Saber NêO usar multiagente é maturidade</strong><span class="text-neutral-400"> — abaixo de 30 min ou em POC, 1 agente vence.</span></div></div>
         </div>
         <div class="bg-dark-800/50 rounded-lg p-4 mb-8">
           <h3 class="font-semibold text-teal-400 mb-2">Próximo Módulo:</h3>
-          <p class="text-neutral-300">5.2 — Browser Use + Computer Use: quando o agente precisa controlar um browser real ou seu desktop inteiro, e onde você NÃO deve deixar ele entrar.</p>
+          <p class="text-neutral-300">5.2 — Browser Use + Computer Use: quando o agente precisa controlar um browser real ou seu desktop inteiro, e onde você NêO deve deixar ele entrar.</p>
         </div>
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Voltar para Trilha 5</a>

@@ -1,6 +1,6 @@
 # Skills do Master Codex
 
-5 skills empacotadas pro Claude Code (também funcionam, com adaptação, em Codex e Cursor). Cada skill é um conjunto de instruções + templates que o agente carrega quando o gatilho certo aparece.
+5 skills empacotadas pro Claude Code (também funcionam, com adaptaçêo, em Codex e Cursor). Cada skill é um conjunto de instruções + templates que o agente carrega quando o gatilho certo aparece.
 
 ## Como instalar
 
@@ -30,9 +30,9 @@ Você pode chamar a skill de 3 formas:
 
 | Skill | Gatilho típico | Output |
 |-------|----------------|--------|
-| **landing-page** | "preciso de uma landing pra X", "monta uma página de captura", "página de vendas" | Pasta com Next.js + Tailwind + shadcn, 5 seções (hero, dor, solução, prova, CTA) |
+| **landing-page** | "preciso de uma landing pra X", "monta uma página de captura", "página de vendas" | Pasta com Next.js + Tailwind + shadcn, 5 seções (hero, dor, soluçêo, prova, CTA) |
 | **pr-review** | "revisa esse PR", "olha esse diff", "code review" | Comentário estruturado: secrets, scope, lógica, testes, performance |
-| **qa-visual** | "testa visualmente", "QA do app", "checa regressão", "valida fluxo" | Screenshots + relatório de regressões + comparação com baseline |
+| **qa-visual** | "testa visualmente", "QA do app", "checa regressêo", "valida fluxo" | Screenshots + relatório de regressões + comparaçêo com baseline |
 | **micro-saas-launch** | "vou lançar um SaaS", "ajuda no lançamento", "preciso de copy + landing + posts" | Plano de 30 dias: nicho, copy, landing, vídeo Remotion, calendário de posts |
 | **weekly-report** | "relatório da semana", "report pro cliente", "fechamento semanal" | Slides + email com métricas, atividades, próximos passos |
 
@@ -40,16 +40,16 @@ Você pode chamar a skill de 3 formas:
 
 Todas seguem 4 princípios:
 
-1. **Frontmatter YAML claro.** O `description` e `when_to_use` são o que o agente lê pra decidir se aciona. Quanto melhor escrito, melhor o roteamento.
+1. **Frontmatter YAML claro.** O `description` e `when_to_use` sêo o que o agente lê pra decidir se aciona. Quanto melhor escrito, melhor o roteamento.
 2. **Inputs/Outputs explícitos.** A skill lista o que precisa (input) e o que entrega (output). Sem ambiguidade.
-3. **Templates incluídos.** Não é só "instrução" — tem código real que o agente copia e adapta.
-4. **Idempotente.** Rodar a skill 2x não quebra nada. Se já existe arquivo, pergunta antes de sobrescrever.
+3. **Templates incluídos.** Nêo é só "instruçêo" — tem código real que o agente copia e adapta.
+4. **Idempotente.** Rodar a skill 2x nêo quebra nada. Se já existe arquivo, pergunta antes de sobrescrever.
 
 ## Customizando
 
 Toda skill é só um arquivo `SKILL.md`. Abre, edita, salva. Versiona no Git se quiser.
 
-Sugestão: depois de usar a skill por 30 dias, abre o `SKILL.md` e adiciona uma seção `## Aprendizados` com o que você notou que ela faz mal. Próxima rodada, o agente já corrige.
+Sugestêo: depois de usar a skill por 30 dias, abre o `SKILL.md` e adiciona uma seçêo `## Aprendizados` com o que você notou que ela faz mal. Próxima rodada, o agente já corrige.
 
 ## Próximos passos
 

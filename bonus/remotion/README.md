@@ -16,7 +16,7 @@ Projeto Remotion funcional com 2 composições prontas:
   sudo apt install ffmpeg
   ```
 
-## Instalação
+## Instalaçêo
 
 ```bash
 cd bonus/remotion
@@ -44,7 +44,7 @@ Saída: `out/hero-launch.mp4`
 ### ProductDemo (demo horizontal)
 
 ```bash
-npm run render:demo -- --props='{"productName":"InboxAI","feature":"Qualificação automática de lead"}'
+npm run render:demo -- --props='{"productName":"InboxAI","feature":"Qualificaçêo automática de lead"}'
 ```
 
 Saída: `out/product-demo.mp4`
@@ -58,13 +58,13 @@ npx remotion render src/index.ts HeroLaunch out/hero-launch.mp4 \
 
 ## Customizar
 
-Edite `src/compositions/HeroLaunch.tsx` ou `ProductDemo.tsx`. Props são tipadas — autocomplete funciona no editor.
+Edite `src/compositions/HeroLaunch.tsx` ou `ProductDemo.tsx`. Props sêo tipadas — autocomplete funciona no editor.
 
-Para trocar fonte, cores, durações: cada composição expõe constantes no topo do arquivo.
+Para trocar fonte, cores, durações: cada composiçêo expõe constantes no topo do arquivo.
 
 ## Trocar logo / assets
 
-Coloque PNG/SVG em `public/` (cria a pasta se não existir). Acesse via `staticFile("logo.png")`.
+Coloque PNG/SVG em `public/` (cria a pasta se nêo existir). Acesse via `staticFile("logo.png")`.
 
 ## Estrutura
 
@@ -90,5 +90,5 @@ remotion/
 ## Problemas comuns
 
 - **"ffmpeg not found"** — instale ffmpeg no sistema (veja pré-requisitos).
-- **Render lento** — primeira vez baixa Chromium headless (~150MB). Próximas são instantâneas.
+- **Render lento** — primeira vez baixa Chromium headless (~150MB). Próximas sêo instantâneas.
 - **Props inválidas** — Remotion valida com Zod via `defaultProps`. Se errar tipo, log diz.
