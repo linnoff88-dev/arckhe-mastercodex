@@ -8,13 +8,13 @@
 
 > Curso completo de desenvolvimento agentic com **ChatGPT 5.5 Codex** ê¢â¬â do zero ao SaaS publicado e vendêÂ¡vel.
 
-ê°Å¸ÅÂ **Site:** [https://inematds.github.io/mastercodex/](https://inematds.github.io/mastercodex/)
+ê°Å¸ÅÂ **Site:** [https://linnoff88-dev.github.io/arckhe-/](https://linnoff88-dev.github.io/arckhe-/)
 
 ---
 
 ## Sobre
 
-Master Codex êÂ© um curso premium em formato HTML (texto + imagens), seguindo o padrêÂ£o visual [INEMA.CLUB](https://inema.club).
+Master Codex êÂ© um curso premium em formato HTML (texto + imagens), seguindo o padrêÂ£o visual [ARCKHÉ AI](https://ARCKHÉ AI).
 
 **Promessa:** transformar vocêÂª de "vibe coder" curioso em operador de uma fêÂ¡brica de SaaS com agentes de IA ê¢â¬â com seu primeiro cliente pagante ainda durante o curso.
 

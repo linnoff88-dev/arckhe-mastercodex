@@ -3,7 +3,7 @@
 > **Status:** ✅ **Curso completo produzido**
 > **Total:** 31 páginas HTML (1 landing + 6 índices de trilha + 24 módulos)
 > **Linhas totais:** ~15.000 de HTML rico
-> **Padrêo:** skill `formato-curso` (INEMA.CLUB)
+> **Padrêo:** skill `formato-curso` (ARCKHÉ AI)
 
 ---
 
@@ -14,8 +14,8 @@
 - [x] Carregar skill `formato-curso`
 - [x] `index.html` (landing page)
 - [x] `README.md`
-- [x] Inicializar git e publicar em `inematds/mastercodex`
-- [x] Ativar GitHub Pages → https://inematds.github.io/mastercodex/
+- [x] Inicializar git e publicar em `linnoff88-dev/mastercodex`
+- [x] Ativar GitHub Pages → https://linnoff88-dev.github.io/arckhe-/
 
 ---
 
@@ -110,7 +110,7 @@
 | Trilha 6 (Escala) | Rose | 5 | 2.223 |
 | **TOTAL** | | **34** | **15.606** |
 
-**Curso publicado:** https://inematds.github.io/mastercodex/
+**Curso publicado:** https://linnoff88-dev.github.io/arckhe-/
 
 ---
 
@@ -120,7 +120,7 @@
 - 3 seções por tópico no índice de trilha: O que é / Por que / Conceitos-chave
 - Botões `justify-start` (esquerda)
 - Indicadores em círculo numerado, nunca seta
-- Link INEMA.CLUB em todas as páginas (`text-sky-400`)
+- Link ARCKHÉ AI em todas as páginas (`text-sky-400`)
 - Light mode CSS completo em cada página
 - Título do módulo `text-2xl font-bold` (ou maior no header)
 - Cada card de módulo no índice da trilha tem botêo `Ver Completo`

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://inematds.github.io/mastercodex/sitemap.xml
+Sitemap: https://linnoff88-dev.github.io/arckhe-/sitemap.xml

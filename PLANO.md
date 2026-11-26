@@ -1,7 +1,7 @@
 # MASTER CODEX — Plano Mestre
 
 > **Versêo:** 1.0 — 2026-05-01
-> **Formato:** Curso HTML (texto + imagens), padrêo INEMA.CLUB
+> **Formato:** Curso HTML (texto + imagens), padrêo ARCKHÉ AI
 > **Preço-alvo:** R$ 5.000
 > **Estrutura:** 6 trilhas × 4 módulos = 24 módulos / 144 tópicos
 
@@ -163,7 +163,7 @@ Ao final de cada trilha, o aluno sabe:
 - ✅ Diferencial: método autoral + casos reais + skills/AGENTS.md prontos
 - ✅ Projeto-âncora: **InboxAI** (CRM omnichannel com agentes IA)
 - ✅ WhatsApp: Evolution API (auto-hospedada)
-- ✅ Formato: HTML INEMA.CLUB (skill `formato-curso`)
+- ✅ Formato: HTML ARCKHÉ AI (skill `formato-curso`)
 - ✅ Estrutura: 6 trilhas × 4 módulos × 6 tópicos = 144 tópicos
 
 ---
